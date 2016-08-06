@@ -53,6 +53,9 @@
             this.subTotalLbl = new System.Windows.Forms.Label();
             this.SalesTaxLbl = new System.Windows.Forms.Label();
             this.GrandTotalLbl = new System.Windows.Forms.Label();
+            this.hiddenLabel = new System.Windows.Forms.Label();
+            this.hiddenTxtBx = new System.Windows.Forms.TextBox();
+            this.OrderDVDCkBx = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.MovieSelectedGroupBoxAtOrderForm.SuspendLayout();
             this.OrderGroupBoxAtOrderForm.SuspendLayout();
@@ -126,7 +129,7 @@
             // 
             // backButtonAtOrderForm
             // 
-            this.backButtonAtOrderForm.Location = new System.Drawing.Point(439, 338);
+            this.backButtonAtOrderForm.Location = new System.Drawing.Point(416, 359);
             this.backButtonAtOrderForm.Name = "backButtonAtOrderForm";
             this.backButtonAtOrderForm.Size = new System.Drawing.Size(75, 23);
             this.backButtonAtOrderForm.TabIndex = 1;
@@ -135,7 +138,7 @@
             // 
             // CancelbuttonAtOrderForm
             // 
-            this.CancelbuttonAtOrderForm.Location = new System.Drawing.Point(567, 338);
+            this.CancelbuttonAtOrderForm.Location = new System.Drawing.Point(539, 359);
             this.CancelbuttonAtOrderForm.Name = "CancelbuttonAtOrderForm";
             this.CancelbuttonAtOrderForm.Size = new System.Drawing.Size(75, 23);
             this.CancelbuttonAtOrderForm.TabIndex = 2;
@@ -144,7 +147,7 @@
             // 
             // StreamButtonAtOrderForm
             // 
-            this.StreamButtonAtOrderForm.Location = new System.Drawing.Point(685, 338);
+            this.StreamButtonAtOrderForm.Location = new System.Drawing.Point(665, 359);
             this.StreamButtonAtOrderForm.Name = "StreamButtonAtOrderForm";
             this.StreamButtonAtOrderForm.Size = new System.Drawing.Size(75, 23);
             this.StreamButtonAtOrderForm.TabIndex = 3;
@@ -167,6 +170,9 @@
             // 
             // OrderGroupBoxAtOrderForm
             // 
+            this.OrderGroupBoxAtOrderForm.Controls.Add(this.OrderDVDCkBx);
+            this.OrderGroupBoxAtOrderForm.Controls.Add(this.hiddenTxtBx);
+            this.OrderGroupBoxAtOrderForm.Controls.Add(this.hiddenLabel);
             this.OrderGroupBoxAtOrderForm.Controls.Add(this.GrandTotalLbl);
             this.OrderGroupBoxAtOrderForm.Controls.Add(this.SalesTaxLbl);
             this.OrderGroupBoxAtOrderForm.Controls.Add(this.subTotalLbl);
@@ -176,9 +182,9 @@
             this.OrderGroupBoxAtOrderForm.Controls.Add(this.SubTotalTxtBx);
             this.OrderGroupBoxAtOrderForm.Controls.Add(this.costTxtBx);
             this.OrderGroupBoxAtOrderForm.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrderGroupBoxAtOrderForm.Location = new System.Drawing.Point(316, 48);
+            this.OrderGroupBoxAtOrderForm.Location = new System.Drawing.Point(316, 27);
             this.OrderGroupBoxAtOrderForm.Name = "OrderGroupBoxAtOrderForm";
-            this.OrderGroupBoxAtOrderForm.Size = new System.Drawing.Size(444, 266);
+            this.OrderGroupBoxAtOrderForm.Size = new System.Drawing.Size(444, 259);
             this.OrderGroupBoxAtOrderForm.TabIndex = 5;
             this.OrderGroupBoxAtOrderForm.TabStop = false;
             this.OrderGroupBoxAtOrderForm.Text = "Your Order";
@@ -231,82 +237,124 @@
             // 
             // costTxtBx
             // 
-            this.costTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.costTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.costTxtBx.Location = new System.Drawing.Point(208, 30);
             this.costTxtBx.Name = "costTxtBx";
-            this.costTxtBx.Size = new System.Drawing.Size(142, 26);
+            this.costTxtBx.ReadOnly = true;
+            this.costTxtBx.Size = new System.Drawing.Size(142, 20);
             this.costTxtBx.TabIndex = 0;
             this.costTxtBx.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // SubTotalTxtBx
             // 
-            this.SubTotalTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.SubTotalTxtBx.Location = new System.Drawing.Point(208, 73);
+            this.SubTotalTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SubTotalTxtBx.Location = new System.Drawing.Point(208, 113);
             this.SubTotalTxtBx.Name = "SubTotalTxtBx";
-            this.SubTotalTxtBx.Size = new System.Drawing.Size(142, 26);
+            this.SubTotalTxtBx.ReadOnly = true;
+            this.SubTotalTxtBx.Size = new System.Drawing.Size(142, 20);
             this.SubTotalTxtBx.TabIndex = 1;
             // 
             // SalesTaxTextBx
             // 
-            this.SalesTaxTextBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.SalesTaxTextBx.Location = new System.Drawing.Point(208, 124);
+            this.SalesTaxTextBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SalesTaxTextBx.Location = new System.Drawing.Point(208, 148);
             this.SalesTaxTextBx.Name = "SalesTaxTextBx";
-            this.SalesTaxTextBx.Size = new System.Drawing.Size(142, 26);
+            this.SalesTaxTextBx.ReadOnly = true;
+            this.SalesTaxTextBx.Size = new System.Drawing.Size(142, 20);
             this.SalesTaxTextBx.TabIndex = 2;
             // 
             // GrandTotalTxtBx
             // 
-            this.GrandTotalTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.GrandTotalTxtBx.Location = new System.Drawing.Point(208, 168);
+            this.GrandTotalTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.GrandTotalTxtBx.Location = new System.Drawing.Point(208, 183);
             this.GrandTotalTxtBx.Name = "GrandTotalTxtBx";
-            this.GrandTotalTxtBx.Size = new System.Drawing.Size(142, 26);
+            this.GrandTotalTxtBx.ReadOnly = true;
+            this.GrandTotalTxtBx.Size = new System.Drawing.Size(142, 20);
             this.GrandTotalTxtBx.TabIndex = 3;
             // 
             // costLabel
             // 
             this.costLabel.AutoSize = true;
-            this.costLabel.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.costLabel.Location = new System.Drawing.Point(155, 25);
+            this.costLabel.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.costLabel.Location = new System.Drawing.Point(164, 33);
             this.costLabel.Name = "costLabel";
-            this.costLabel.Size = new System.Drawing.Size(43, 23);
+            this.costLabel.Size = new System.Drawing.Size(34, 17);
             this.costLabel.TabIndex = 4;
             this.costLabel.Text = "cost";
             // 
             // subTotalLbl
             // 
             this.subTotalLbl.AutoSize = true;
-            this.subTotalLbl.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.subTotalLbl.Location = new System.Drawing.Point(114, 73);
+            this.subTotalLbl.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.subTotalLbl.Location = new System.Drawing.Point(136, 116);
             this.subTotalLbl.Name = "subTotalLbl";
-            this.subTotalLbl.Size = new System.Drawing.Size(84, 23);
+            this.subTotalLbl.Size = new System.Drawing.Size(62, 17);
             this.subTotalLbl.TabIndex = 5;
             this.subTotalLbl.Text = "SubTotal";
             // 
             // SalesTaxLbl
             // 
             this.SalesTaxLbl.AutoSize = true;
-            this.SalesTaxLbl.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.SalesTaxLbl.Location = new System.Drawing.Point(56, 127);
+            this.SalesTaxLbl.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.SalesTaxLbl.Location = new System.Drawing.Point(97, 148);
             this.SalesTaxLbl.Name = "SalesTaxLbl";
-            this.SalesTaxLbl.Size = new System.Drawing.Size(142, 23);
+            this.SalesTaxLbl.Size = new System.Drawing.Size(105, 17);
             this.SalesTaxLbl.TabIndex = 6;
             this.SalesTaxLbl.Text = "Sales Tax(13%)";
             // 
             // GrandTotalLbl
             // 
             this.GrandTotalLbl.AutoSize = true;
-            this.GrandTotalLbl.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.GrandTotalLbl.Location = new System.Drawing.Point(89, 168);
+            this.GrandTotalLbl.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.GrandTotalLbl.Location = new System.Drawing.Point(119, 183);
             this.GrandTotalLbl.Name = "GrandTotalLbl";
-            this.GrandTotalLbl.Size = new System.Drawing.Size(109, 23);
+            this.GrandTotalLbl.Size = new System.Drawing.Size(79, 17);
             this.GrandTotalLbl.TabIndex = 7;
             this.GrandTotalLbl.Text = "Grand Total";
+            // 
+            // hiddenLabel
+            // 
+            this.hiddenLabel.AutoSize = true;
+            this.hiddenLabel.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.hiddenLabel.Location = new System.Drawing.Point(60, 58);
+            this.hiddenLabel.Name = "hiddenLabel";
+            this.hiddenLabel.Size = new System.Drawing.Size(69, 17);
+            this.hiddenLabel.TabIndex = 8;
+            this.hiddenLabel.Text = "Attention:";
+            this.hiddenLabel.Visible = false;
+            // 
+            // hiddenTxtBx
+            // 
+            this.hiddenTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.hiddenTxtBx.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.hiddenTxtBx.Location = new System.Drawing.Point(146, 56);
+            this.hiddenTxtBx.Multiline = true;
+            this.hiddenTxtBx.Name = "hiddenTxtBx";
+            this.hiddenTxtBx.Size = new System.Drawing.Size(239, 43);
+            this.hiddenTxtBx.TabIndex = 9;
+            this.hiddenTxtBx.Text = "You have chosen to buy the movie and have it delivered to you.An additional charg" +
+    "e of $10.00 will be added to your Bill. ";
+            this.hiddenTxtBx.Visible = false;
+            this.hiddenTxtBx.TextChanged += new System.EventHandler(this.hiddenTxtBx_TextChanged);
+            // 
+            // OrderDVDCkBx
+            // 
+            this.OrderDVDCkBx.AutoSize = true;
+            this.OrderDVDCkBx.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.OrderDVDCkBx.Location = new System.Drawing.Point(71, 220);
+            this.OrderDVDCkBx.Name = "OrderDVDCkBx";
+            this.OrderDVDCkBx.Size = new System.Drawing.Size(314, 23);
+            this.OrderDVDCkBx.TabIndex = 10;
+            this.OrderDVDCkBx.Text = "Order the DVD (adds $10 to your order)";
+            this.OrderDVDCkBx.UseVisualStyleBackColor = true;
+            this.OrderDVDCkBx.CheckedChanged += new System.EventHandler(this.OrderDVDCkBx_CheckedChanged);
             // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 394);
+            this.ControlBox = false;
             this.Controls.Add(this.OrderGroupBoxAtOrderForm);
             this.Controls.Add(this.MovieSelectedGroupBoxAtOrderForm);
             this.Controls.Add(this.StreamButtonAtOrderForm);
@@ -314,7 +362,10 @@
             this.Controls.Add(this.backButtonAtOrderForm);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "OrderForm";
+            this.ShowIcon = false;
             this.Text = "OrderForm";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -355,5 +406,8 @@
         private System.Windows.Forms.Label SalesTaxLbl;
         private System.Windows.Forms.Label subTotalLbl;
         private System.Windows.Forms.Label costLabel;
+        private System.Windows.Forms.TextBox hiddenTxtBx;
+        private System.Windows.Forms.Label hiddenLabel;
+        private System.Windows.Forms.CheckBox OrderDVDCkBx;
     }
 }

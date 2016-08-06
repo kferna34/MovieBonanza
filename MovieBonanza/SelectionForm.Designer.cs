@@ -39,8 +39,8 @@
             this.titleLabel = new System.Windows.Forms.Label();
             this.CategoryLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureOfMovie = new System.Windows.Forms.PictureBox();
             this.nextButtonAtSelectionForm = new System.Windows.Forms.Button();
+            this.pictureOfMovie = new System.Windows.Forms.PictureBox();
             this.SelectionGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureOfMovie)).BeginInit();
             this.SuspendLayout();
@@ -181,16 +181,6 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Cost";
             // 
-            // pictureOfMovie
-            // 
-            this.pictureOfMovie.Location = new System.Drawing.Point(15, 32);
-            this.pictureOfMovie.Name = "pictureOfMovie";
-            this.pictureOfMovie.Size = new System.Drawing.Size(151, 117);
-            this.pictureOfMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureOfMovie.TabIndex = 7;
-            this.pictureOfMovie.TabStop = false;
-            this.pictureOfMovie.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // nextButtonAtSelectionForm
             // 
             this.nextButtonAtSelectionForm.Enabled = false;
@@ -200,6 +190,16 @@
             this.nextButtonAtSelectionForm.TabIndex = 4;
             this.nextButtonAtSelectionForm.Text = "Next";
             this.nextButtonAtSelectionForm.UseVisualStyleBackColor = true;
+            // 
+            // pictureOfMovie
+            // 
+            this.pictureOfMovie.Location = new System.Drawing.Point(15, 32);
+            this.pictureOfMovie.Name = "pictureOfMovie";
+            this.pictureOfMovie.Size = new System.Drawing.Size(151, 117);
+            this.pictureOfMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureOfMovie.TabIndex = 7;
+            this.pictureOfMovie.TabStop = false;
+            this.pictureOfMovie.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // SelectionForm
             // 
@@ -212,10 +212,12 @@
             this.Controls.Add(this.MovieDropdownList);
             this.Controls.Add(this.HeaderLabel);
             this.Controls.Add(this.WelcomeLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SelectionForm";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Bonanza";
             this.Load += new System.EventHandler(this.SelectionForm_Load);
             this.SelectionGroupBox.ResumeLayout(false);
