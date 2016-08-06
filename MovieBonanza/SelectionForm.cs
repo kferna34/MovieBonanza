@@ -8,7 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
-
+/*
+ * Author: Krytia Fernandez
+ * Date Last Modified : August 06 2016
+ * version: 0.0.0.1
+ */
 namespace MovieBonanza
 {
     public partial class SelectionForm : Form
