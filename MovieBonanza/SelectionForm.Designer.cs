@@ -206,13 +206,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 394);
+            this.ControlBox = false;
             this.Controls.Add(this.nextButtonAtSelectionForm);
             this.Controls.Add(this.SelectionGroupBox);
             this.Controls.Add(this.MovieDropdownList);
             this.Controls.Add(this.HeaderLabel);
             this.Controls.Add(this.WelcomeLabel);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SelectionForm";
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.Text = "Movie Bonanza";
             this.Load += new System.EventHandler(this.SelectionForm_Load);
             this.SelectionGroupBox.ResumeLayout(false);
             this.SelectionGroupBox.PerformLayout();
