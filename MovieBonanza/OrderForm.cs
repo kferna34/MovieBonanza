@@ -34,6 +34,11 @@ namespace MovieBonanza
                 hiddenLabel.Visible = true;
                 hiddenTxtBx.Visible = true;
             }
+            else
+            {
+                hiddenLabel.Visible = false;
+                hiddenTxtBx.Visible = false;
+            }
         }
 
         private void CancelbuttonAtOrderForm_Click(object sender, EventArgs e)
@@ -52,6 +57,18 @@ namespace MovieBonanza
         {
             StreamForm NavToStream = new StreamForm();
             NavToStream.Show();
+        }
+
+        private void OrderForm_Load(object sender, EventArgs e)
+        {
+          
+        }
+
+       public void TitleTextBoxAtOF_TextChanged(object sender, EventArgs e)
+        {
+
+           
+           
         }
     }
 }

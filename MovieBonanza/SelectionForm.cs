@@ -21,7 +21,7 @@ namespace MovieBonanza
         {
             Thread LogoScreen = new Thread(new ThreadStart(SplashStart));
             LogoScreen.Start();
-            Thread.Sleep(2500);
+            Thread.Sleep(2000);
             InitializeComponent();
             LogoScreen.Abort();
         }
@@ -49,9 +49,14 @@ namespace MovieBonanza
             }
         
 
-        private void MovieDropdownList_SelectedIndexChanged(object sender, EventArgs e)
+        public void MovieDropdownList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            TitleTextBox.Text = MovieDropdownList.SelectedItem.ToString();
+        }
 
+        private void TitleTextBox_TextChanged(object sender, EventArgs e)
+        {
+            TitleTextBox.Text = MovieDropdownList.SelectedItem.ToString();
         }
     }
 }

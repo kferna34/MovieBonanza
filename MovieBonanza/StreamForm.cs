@@ -16,5 +16,21 @@ namespace MovieBonanza
         {
             InitializeComponent();
         }
+
+        private void StreamForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void movieStartsLabel_Click(object sender, EventArgs e)
+        {
+            
+            movieStartsLabel.Text = "{0} will begin streaming shortly";
+        }
+
+        private void creditcardBilledLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
