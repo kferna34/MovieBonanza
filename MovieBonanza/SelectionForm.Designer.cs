@@ -97,6 +97,7 @@
             this.MovieDropdownList.Size = new System.Drawing.Size(225, 289);
             this.MovieDropdownList.Sorted = true;
             this.MovieDropdownList.TabIndex = 2;
+            this.MovieDropdownList.SelectedIndexChanged += new System.EventHandler(this.MovieDropdownList_SelectedIndexChanged);
             // 
             // SelectionGroupBox
             // 
@@ -183,7 +184,6 @@
             // 
             // nextButtonAtSelectionForm
             // 
-            this.nextButtonAtSelectionForm.Enabled = false;
             this.nextButtonAtSelectionForm.Location = new System.Drawing.Point(637, 329);
             this.nextButtonAtSelectionForm.Name = "nextButtonAtSelectionForm";
             this.nextButtonAtSelectionForm.Size = new System.Drawing.Size(123, 28);

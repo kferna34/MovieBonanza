@@ -44,7 +44,8 @@ namespace MovieBonanza
 
         private void backButtonAtOrderForm_Click(object sender, EventArgs e)
         {
-
+            SelectionForm NavToSelection = new SelectionForm();
+            NavToSelection.Show();
         }
 
         private void StreamButtonAtOrderForm_Click(object sender, EventArgs e)

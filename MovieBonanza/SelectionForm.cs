@@ -41,8 +41,17 @@ namespace MovieBonanza
 
         private void nextButtonAtSelectionForm_Click(object sender, EventArgs e)
         {
-            OrderForm NavToOrder = new OrderForm();
-            NavToOrder.Show();
+
+           
+                nextButtonAtSelectionForm.Visible = true;
+                OrderForm NavToOrder = new OrderForm();
+                NavToOrder.Show();
+            }
+        
+
+        private void MovieDropdownList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
