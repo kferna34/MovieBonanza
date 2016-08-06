@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace MovieBonanza
 {
-    public partial class Form1 : Form
+    public partial class splashForm : Form
     {
-        public Form1()
+        public splashForm()
         {
             InitializeComponent();
+        }
+
+        private void LogoTimer_Tick(object sender, EventArgs e)
+        {
+            progressBar1.Increment(1);
+            if (progressBar1.Value == 100)
+                LogoTimer.Stop();
         }
     }
 }
