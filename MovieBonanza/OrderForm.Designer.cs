@@ -135,6 +135,7 @@
             this.backButtonAtOrderForm.TabIndex = 1;
             this.backButtonAtOrderForm.Text = "Back";
             this.backButtonAtOrderForm.UseVisualStyleBackColor = true;
+            this.backButtonAtOrderForm.Click += new System.EventHandler(this.backButtonAtOrderForm_Click);
             // 
             // CancelbuttonAtOrderForm
             // 
@@ -144,6 +145,7 @@
             this.CancelbuttonAtOrderForm.TabIndex = 2;
             this.CancelbuttonAtOrderForm.Text = "Cancel";
             this.CancelbuttonAtOrderForm.UseVisualStyleBackColor = true;
+            this.CancelbuttonAtOrderForm.Click += new System.EventHandler(this.CancelbuttonAtOrderForm_Click);
             // 
             // StreamButtonAtOrderForm
             // 
@@ -153,6 +155,7 @@
             this.StreamButtonAtOrderForm.TabIndex = 3;
             this.StreamButtonAtOrderForm.Text = "Stream";
             this.StreamButtonAtOrderForm.UseVisualStyleBackColor = true;
+            this.StreamButtonAtOrderForm.Click += new System.EventHandler(this.StreamButtonAtOrderForm_Click);
             // 
             // MovieSelectedGroupBoxAtOrderForm
             // 

@@ -190,6 +190,7 @@
             this.nextButtonAtSelectionForm.TabIndex = 4;
             this.nextButtonAtSelectionForm.Text = "Next";
             this.nextButtonAtSelectionForm.UseVisualStyleBackColor = true;
+            this.nextButtonAtSelectionForm.Click += new System.EventHandler(this.nextButtonAtSelectionForm_Click);
             // 
             // pictureOfMovie
             // 

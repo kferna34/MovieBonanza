@@ -38,5 +38,11 @@ namespace MovieBonanza
         {
 
         }
+
+        private void nextButtonAtSelectionForm_Click(object sender, EventArgs e)
+        {
+            OrderForm NavToOrder = new OrderForm();
+            NavToOrder.Show();
+        }
     }
 }

@@ -35,5 +35,22 @@ namespace MovieBonanza
                 hiddenTxtBx.Visible = true;
             }
         }
+
+        private void CancelbuttonAtOrderForm_Click(object sender, EventArgs e)
+        {
+            SelectionForm NavToSelection = new SelectionForm();
+            NavToSelection.Show();
+        }
+
+        private void backButtonAtOrderForm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StreamButtonAtOrderForm_Click(object sender, EventArgs e)
+        {
+            StreamForm NavToStream = new StreamForm();
+            NavToStream.Show();
+        }
     }
 }
