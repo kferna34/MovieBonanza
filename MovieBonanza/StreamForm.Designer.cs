@@ -37,20 +37,21 @@
             // 
             // OKButton
             // 
-            this.OKButton.Location = new System.Drawing.Point(572, 282);
+            this.OKButton.Location = new System.Drawing.Point(660, 332);
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(75, 23);
             this.OKButton.TabIndex = 0;
             this.OKButton.Text = "OK";
             this.OKButton.UseVisualStyleBackColor = true;
+            this.OKButton.Click += new System.EventHandler(this.OKButton_Click);
             // 
             // ThankYoulabel
             // 
             this.ThankYoulabel.AutoSize = true;
-            this.ThankYoulabel.Font = new System.Drawing.Font("Tahoma", 18F);
-            this.ThankYoulabel.Location = new System.Drawing.Point(188, 63);
+            this.ThankYoulabel.Font = new System.Drawing.Font("Cooper Black", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThankYoulabel.Location = new System.Drawing.Point(25, 58);
             this.ThankYoulabel.Name = "ThankYoulabel";
-            this.ThankYoulabel.Size = new System.Drawing.Size(438, 29);
+            this.ThankYoulabel.Size = new System.Drawing.Size(724, 40);
             this.ThankYoulabel.TabIndex = 1;
             this.ThankYoulabel.Text = "Thank you for choosing Movie Bonanza!";
             // 
@@ -58,11 +59,10 @@
             // 
             this.creditcardBilledLabel.AutoSize = true;
             this.creditcardBilledLabel.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.creditcardBilledLabel.Location = new System.Drawing.Point(83, 114);
+            this.creditcardBilledLabel.Location = new System.Drawing.Point(231, 129);
             this.creditcardBilledLabel.Name = "creditcardBilledLabel";
-            this.creditcardBilledLabel.Size = new System.Drawing.Size(307, 23);
+            this.creditcardBilledLabel.Size = new System.Drawing.Size(0, 23);
             this.creditcardBilledLabel.TabIndex = 2;
-            this.creditcardBilledLabel.Text = "Your Credit card will be chargerd : ";
             this.creditcardBilledLabel.Click += new System.EventHandler(this.creditcardBilledLabel_Click);
             // 
             // selectionLabel

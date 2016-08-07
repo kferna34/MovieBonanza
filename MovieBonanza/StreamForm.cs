@@ -30,7 +30,13 @@ namespace MovieBonanza
 
         private void creditcardBilledLabel_Click(object sender, EventArgs e)
         {
+            creditcardBilledLabel.Text = "";
+            creditcardBilledLabel.Text=("Your Credit card will be charged {0}");
+        }
 
+        private void OKButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
