@@ -63,14 +63,15 @@ namespace MovieBonanza
 
         private void OrderForm_Load(object sender, EventArgs e)
         {
-          
+           
+           
         }
 
        public void TitleTextBoxAtOF_TextChanged(object sender, EventArgs e)
         {
+            
 
-           
-           
+
         }
 
         private void OrderGroupBoxAtOrderForm_Enter(object sender, EventArgs e)
