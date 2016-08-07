@@ -31,6 +31,7 @@ namespace MovieBonanza
         }
         private void SelectionForm_Load(object sender, EventArgs e)
         {
+           
 
         }
 
@@ -42,10 +43,20 @@ namespace MovieBonanza
         private void nextButtonAtSelectionForm_Click(object sender, EventArgs e)
         {
 
+            if (MovieDropdownList.SelectedIndex != -1)
+            {
+                nextButtonAtSelectionForm.Enabled = false;
+                SelectionForm NavToHide = new SelectionForm();
+                NavToHide.Close();
+            }
+            else
+            {
+                nextButtonAtSelectionForm.Enabled = true;
+                OrderForm NavToOrder = new OrderForm();
+                NavToOrder.Show();
+            }
 
-            nextButtonAtSelectionForm.Visible = true;
-            OrderForm NavToOrder = new OrderForm();
-            NavToOrder.Show();
+
 
         }
 
@@ -58,7 +69,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = "Ceday Rapids";
                     CategoryTextBox.Text = "Comedy";
                     costTextBox.Text = " $ 1.99 ";
-                    
+
                     break;
                 case 1:
                     TitleTextBox.Text = "Company Men";

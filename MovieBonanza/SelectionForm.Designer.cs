@@ -194,6 +194,7 @@
             // 
             // nextButtonAtSelectionForm
             // 
+            this.nextButtonAtSelectionForm.Enabled = false;
             this.nextButtonAtSelectionForm.Location = new System.Drawing.Point(637, 329);
             this.nextButtonAtSelectionForm.Name = "nextButtonAtSelectionForm";
             this.nextButtonAtSelectionForm.Size = new System.Drawing.Size(123, 28);
@@ -217,7 +218,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SelectionForm";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Bonanza";
             this.Load += new System.EventHandler(this.SelectionForm_Load);

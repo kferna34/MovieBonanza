@@ -238,6 +238,7 @@
             this.OrderGroupBoxAtOrderForm.TabIndex = 5;
             this.OrderGroupBoxAtOrderForm.TabStop = false;
             this.OrderGroupBoxAtOrderForm.Text = "Your Order";
+            this.OrderGroupBoxAtOrderForm.Enter += new System.EventHandler(this.OrderGroupBoxAtOrderForm_Enter);
             // 
             // OrderDVDCkBx
             // 

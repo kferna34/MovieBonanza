@@ -15,6 +15,7 @@ namespace MovieBonanza
         public OrderForm()
         {
             InitializeComponent();
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -57,6 +58,7 @@ namespace MovieBonanza
         {
             StreamForm NavToStream = new StreamForm();
             NavToStream.Show();
+
         }
 
         private void OrderForm_Load(object sender, EventArgs e)
@@ -69,6 +71,11 @@ namespace MovieBonanza
 
            
            
+        }
+
+        private void OrderGroupBoxAtOrderForm_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
