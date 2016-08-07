@@ -55,87 +55,125 @@ namespace MovieBonanza
             switch (MovieDropdownList.SelectedIndex)
             {
                 case 0:
-                    CategoryTextBox.Text = "Comedy";
                     TitleTextBox.Text = "Ceday Rapids";
-
+                    CategoryTextBox.Text = "Comedy";
+                    costTextBox.Text = " $ 1.99 ";
+                    
                     break;
                 case 1:
-                    CategoryTextBox.Text = "Drama";
                     TitleTextBox.Text = "Company Men";
+                    CategoryTextBox.Text = "Drama";
+                    costTextBox.Text = " $ 1.99";
+
                     break;
                 case 2:
-                    CategoryTextBox.Text = "Action";
                     TitleTextBox.Text = " Death Race 2";
+                    CategoryTextBox.Text = "Action";
+                    costTextBox.Text = " $ 2.99";
+
                     break;
                 case 3:
-                    CategoryTextBox.Text = "New Release";
                     TitleTextBox.Text = "FootLoose";
+                    CategoryTextBox.Text = "New Release";
+                    costTextBox.Text = " $ 4.99";
+
                     break;
                 case 4:
-                    CategoryTextBox.Text = "Family";
                     TitleTextBox.Text = "Gnomeo and Juliet";
+                    CategoryTextBox.Text = "Family";
+                    costTextBox.Text = "$ 0.99";
                     break;
+
                 case 5:
-                    CategoryTextBox.Text = "Sci-Fi";
                     TitleTextBox.Text = " I am Number Four";
-                    break;
-                case 6:
-                    CategoryTextBox.Text = "Comedy";
-                    TitleTextBox.Text = " Just Go With It";
-                    break;
-                case 7:
-                    CategoryTextBox.Text = "Comedy";
-                    TitleTextBox.Text = "No String Attached";
-                    break;
-                case 8:
-                    CategoryTextBox.Text = "New Release";
-                    TitleTextBox.Text = "Real Steel";
-                    break;
-                case 9:
-                    CategoryTextBox.Text = "Action";
-                    TitleTextBox.Text = "Sanctrum";
-                    break;
-                case 10:
                     CategoryTextBox.Text = "Sci-Fi";
-                    TitleTextBox.Text = "Season of the Witch";
+                    costTextBox.Text = "$ 2.99";
                     break;
-                case 11:
+
+                case 6:
+                    TitleTextBox.Text = " Just Go With It";
                     CategoryTextBox.Text = "Comedy";
+                    costTextBox.Text = "$ 1.99";
+                    break;
+
+                case 7:
+                    TitleTextBox.Text = "No String Attached";
+                    CategoryTextBox.Text = "Comedy";
+                    costTextBox.Text = "$ 1.99";
+                    break;
+
+                case 8:
+                    TitleTextBox.Text = "Real Steel";
+                    CategoryTextBox.Text = "New Release";
+                    costTextBox.Text = "$ 4.99";
+                    break;
+
+                case 9:
+                    TitleTextBox.Text = "Sanctrum";
+                    CategoryTextBox.Text = "Action";
+                    costTextBox.Text = "$ 2.99";
+                    break;
+
+                case 10:
+                    TitleTextBox.Text = "Season of the Witch";
+                    CategoryTextBox.Text = "Sci-Fi";
+                    costTextBox.Text = "$ 2.99";
+                    break;
+
+                case 11:
                     TitleTextBox.Text = "The Dilemma";
+                    CategoryTextBox.Text = "Comedy";
+                    costTextBox.Text = "$ 1.99";
                     break;
+
                 case 12:
-                    CategoryTextBox.Text = "Action";
                     TitleTextBox.Text = "The Eagle";
+                    CategoryTextBox.Text = "Action";
+                    costTextBox.Text = "$ 2.99";
                     break;
+
                 case 13:
-                    CategoryTextBox.Text = "Action";
                     TitleTextBox.Text = "The Green Hornet";
+                    CategoryTextBox.Text = "Action";
+                    costTextBox.Text = "$ 2.99";
                     break;
+
                 case 14:
-                    CategoryTextBox.Text = "Action";
                     TitleTextBox.Text = "The Mechanic";
-                    break;
-                case 15:
                     CategoryTextBox.Text = "Action";
+                    costTextBox.Text = "$ 2.99";
+                    break;
+
+                case 15:
                     TitleTextBox.Text = "The Other Woman";
+                    CategoryTextBox.Text = "Action";
+                    costTextBox.Text = "$ 2.99";
                     break;
+
                 case 16:
-                    CategoryTextBox.Text = "Horror";
                     TitleTextBox.Text = "The Rite";
+                    CategoryTextBox.Text = "Horror";
+                    costTextBox.Text = "$ 2.99";
                     break;
+
                 case 17:
-                    CategoryTextBox.Text = "Thriller";
                     TitleTextBox.Text = "The Roommate";
+                    CategoryTextBox.Text = "Thriller";
+                    costTextBox.Text = "$ 1.99";
                     break;
+
                 case 18:
-                    CategoryTextBox.Text = "Drama";
                     TitleTextBox.Text = "The Way Back";
-                    break;
-                case 19:
                     CategoryTextBox.Text = "Drama";
-                    TitleTextBox.Text = "Waiting for Forever";
+                    costTextBox.Text = "$ 1.99";
                     break;
-                
+
+                case 19:
+                    TitleTextBox.Text = "Waiting for Forever";
+                    CategoryTextBox.Text = "Drama";
+                    costTextBox.Text = "$ 1.99";
+                    break;
+
             }
 
 
