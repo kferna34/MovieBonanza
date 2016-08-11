@@ -48,16 +48,25 @@ namespace MovieBonanza
             nextButtonAtSelectionForm.Enabled = true;//displays the NextButton
 
             OrderForm NavToOrder = new OrderForm();//instantiate an obj of the next form        
+
+            NavToOrder.listInfo = this;
+
+            NavToOrder.TitleTextBox.Text = this.TitleTextBox.Text;//passes the title to the order form  
+            NavToOrder.CategoryTextBox.Text = this.CategoryTextBox.Text;//passes the category to the order form
+            NavToOrder.costTextBox.Text = this.costTextBox.Text;//passes the cost to the order form
+
             NavToOrder.Show();
+
             this.Hide();
         }
         public void MovieDropdownList_SelectedIndexChanged(object sender, EventArgs e)
         {
+         
             switch (MovieDropdownList.SelectedIndex )
             {
                 case 0:
                     nextButtonAtSelectionForm.Enabled = true;
-                    TitleTextBox.Text = "Ceday Rapids";
+                    TitleTextBox.Text = "Ceday Rapids";         
                     CategoryTextBox.Text = "Comedy";
                     costTextBox.Text = " $ 1.99 ";
                     break;
@@ -198,7 +207,7 @@ namespace MovieBonanza
         }
         private void TitleTextBox_TextChanged(object sender, EventArgs e)
         {
-            TitleTextBox.Text = MovieDropdownList.SelectedItem.ToString();
+            
         }
     }
 }

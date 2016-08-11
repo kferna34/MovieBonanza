@@ -39,10 +39,9 @@
             this.CancelbuttonAtOrderForm = new System.Windows.Forms.Button();
             this.StreamButtonAtOrderForm = new System.Windows.Forms.Button();
             this.MovieSelectedGroupBoxAtOrderForm = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CategoryLbl = new System.Windows.Forms.Label();
             this.TitleLabel = new System.Windows.Forms.Label();
-            this.CategoryTextBoxAtOF = new System.Windows.Forms.TextBox();
+            this.CategoryTextBox = new System.Windows.Forms.TextBox();
             this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.OrderGroupBoxAtOrderForm = new System.Windows.Forms.GroupBox();
             this.OrderDVDCkBx = new System.Windows.Forms.CheckBox();
@@ -55,11 +54,12 @@
             this.GrandTotalTxtBx = new System.Windows.Forms.TextBox();
             this.SalesTaxTextBx = new System.Windows.Forms.TextBox();
             this.SubTotalTxtBx = new System.Windows.Forms.TextBox();
-            this.costTxtBx = new System.Windows.Forms.TextBox();
+            this.costTextBox = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.MovieSelectedGroupBoxAtOrderForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.OrderGroupBoxAtOrderForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -124,7 +124,7 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.ShortcutKeyDisplayString = "Ctrl+A";
             this.aboutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -163,7 +163,7 @@
             this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.pictureBox1);
             this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.CategoryLbl);
             this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.TitleLabel);
-            this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.CategoryTextBoxAtOF);
+            this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.CategoryTextBox);
             this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.TitleTextBox);
             this.MovieSelectedGroupBoxAtOrderForm.Location = new System.Drawing.Point(24, 38);
             this.MovieSelectedGroupBoxAtOrderForm.Name = "MovieSelectedGroupBoxAtOrderForm";
@@ -171,14 +171,6 @@
             this.MovieSelectedGroupBoxAtOrderForm.TabIndex = 4;
             this.MovieSelectedGroupBoxAtOrderForm.TabStop = false;
             this.MovieSelectedGroupBoxAtOrderForm.Text = "Movie Selected";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(11, 137);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(235, 193);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // CategoryLbl
             // 
@@ -200,14 +192,15 @@
             this.TitleLabel.TabIndex = 2;
             this.TitleLabel.Text = "Title";
             // 
-            // CategoryTextBoxAtOF
+            // CategoryTextBox
             // 
-            this.CategoryTextBoxAtOF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.CategoryTextBoxAtOF.Location = new System.Drawing.Point(6, 102);
-            this.CategoryTextBoxAtOF.Name = "CategoryTextBoxAtOF";
-            this.CategoryTextBoxAtOF.ReadOnly = true;
-            this.CategoryTextBoxAtOF.Size = new System.Drawing.Size(240, 26);
-            this.CategoryTextBoxAtOF.TabIndex = 1;
+            this.CategoryTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.CategoryTextBox.Location = new System.Drawing.Point(6, 102);
+            this.CategoryTextBox.Name = "CategoryTextBox";
+            this.CategoryTextBox.ReadOnly = true;
+            this.CategoryTextBox.Size = new System.Drawing.Size(240, 26);
+            this.CategoryTextBox.TabIndex = 1;
+            this.CategoryTextBox.TextChanged += new System.EventHandler(this.CategoryTextBoxAtOF_TextChanged);
             // 
             // TitleTextBox
             // 
@@ -231,7 +224,7 @@
             this.OrderGroupBoxAtOrderForm.Controls.Add(this.GrandTotalTxtBx);
             this.OrderGroupBoxAtOrderForm.Controls.Add(this.SalesTaxTextBx);
             this.OrderGroupBoxAtOrderForm.Controls.Add(this.SubTotalTxtBx);
-            this.OrderGroupBoxAtOrderForm.Controls.Add(this.costTxtBx);
+            this.OrderGroupBoxAtOrderForm.Controls.Add(this.costTextBox);
             this.OrderGroupBoxAtOrderForm.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OrderGroupBoxAtOrderForm.Location = new System.Drawing.Point(316, 27);
             this.OrderGroupBoxAtOrderForm.Name = "OrderGroupBoxAtOrderForm";
@@ -345,15 +338,24 @@
             this.SubTotalTxtBx.Size = new System.Drawing.Size(142, 20);
             this.SubTotalTxtBx.TabIndex = 1;
             // 
-            // costTxtBx
+            // costTextBox
             // 
-            this.costTxtBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.costTxtBx.Location = new System.Drawing.Point(208, 30);
-            this.costTxtBx.Name = "costTxtBx";
-            this.costTxtBx.ReadOnly = true;
-            this.costTxtBx.Size = new System.Drawing.Size(142, 20);
-            this.costTxtBx.TabIndex = 0;
-            this.costTxtBx.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.costTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.costTextBox.Location = new System.Drawing.Point(208, 30);
+            this.costTextBox.Name = "costTextBox";
+            this.costTextBox.ReadOnly = true;
+            this.costTextBox.Size = new System.Drawing.Size(142, 20);
+            this.costTextBox.TabIndex = 0;
+            this.costTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(11, 137);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(235, 193);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // OrderForm
             // 
@@ -378,9 +380,9 @@
             this.menuStrip1.PerformLayout();
             this.MovieSelectedGroupBoxAtOrderForm.ResumeLayout(false);
             this.MovieSelectedGroupBoxAtOrderForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.OrderGroupBoxAtOrderForm.ResumeLayout(false);
             this.OrderGroupBoxAtOrderForm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,15 +401,12 @@
         private System.Windows.Forms.Button CancelbuttonAtOrderForm;
         private System.Windows.Forms.Button StreamButtonAtOrderForm;
         private System.Windows.Forms.GroupBox MovieSelectedGroupBoxAtOrderForm;
-        private System.Windows.Forms.TextBox CategoryTextBoxAtOF;
         private System.Windows.Forms.GroupBox OrderGroupBoxAtOrderForm;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label CategoryLbl;
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.TextBox GrandTotalTxtBx;
         private System.Windows.Forms.TextBox SalesTaxTextBx;
         private System.Windows.Forms.TextBox SubTotalTxtBx;
-        private System.Windows.Forms.TextBox costTxtBx;
         private System.Windows.Forms.Label GrandTotalLbl;
         private System.Windows.Forms.Label SalesTaxLbl;
         private System.Windows.Forms.Label subTotalLbl;
@@ -416,5 +415,8 @@
         private System.Windows.Forms.Label hiddenLabel;
         private System.Windows.Forms.CheckBox OrderDVDCkBx;
         public System.Windows.Forms.TextBox TitleTextBox;
+        public System.Windows.Forms.TextBox CategoryTextBox;
+        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.TextBox costTextBox;
     }
 }

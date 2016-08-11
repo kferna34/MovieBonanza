@@ -12,7 +12,7 @@ namespace MovieBonanza
 {
     public partial class OrderForm : Form
     {
-        public OrderForm TitleBoxCopy { get; set; }
+        public SelectionForm listInfo { get; set; }
         public OrderForm()
         {
             InitializeComponent();
@@ -45,31 +45,31 @@ namespace MovieBonanza
 
         private void CancelbuttonAtOrderForm_Click(object sender, EventArgs e)
         {
-            SelectionForm NavToSelection = new SelectionForm();
+            SelectionForm NavToSelection = new SelectionForm();//sends the user back to the selction menu
             NavToSelection.Show();
         }
 
         private void backButtonAtOrderForm_Click(object sender, EventArgs e)
         {
            
-            SelectionForm NavToSelection = new SelectionForm();
+            SelectionForm NavToSelection = new SelectionForm(); //sends the user back to the selection menu
             NavToSelection.Show();
         }
 
         private void StreamButtonAtOrderForm_Click(object sender, EventArgs e)
         {
-            StreamForm NavToStream = new StreamForm();
+            StreamForm NavToStream = new StreamForm();//sends the user to the stream form 
             NavToStream.Show();
 
         }
         private void OrderForm_Load(object sender, EventArgs e)
         {
-            
-        }
+           
+    }
 
         public void TitleTextBoxAtOF_TextChanged(object sender, EventArgs e)
         {
-            this.TitleTextBox.Show();
+            this.listInfo.Show();
         }
 
         private void OrderGroupBoxAtOrderForm_Enter(object sender, EventArgs e)
@@ -88,6 +88,16 @@ namespace MovieBonanza
 
             // show dialog 
             aboutBox.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CategoryTextBoxAtOF_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
