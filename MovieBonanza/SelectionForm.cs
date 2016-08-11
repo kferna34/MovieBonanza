@@ -19,11 +19,13 @@ namespace MovieBonanza
     {
         public SelectionForm()
         {
+            //showing the logo
             Thread LogoScreen = new Thread(new ThreadStart(SplashStart));
             LogoScreen.Start();
-            Thread.Sleep(2000);
+            Thread.Sleep(4000);
             InitializeComponent();
-            LogoScreen.Abort();
+            LogoScreen.Abort();// close the logo 
+
         }
         public void SplashStart()
         {
@@ -31,7 +33,7 @@ namespace MovieBonanza
         }
         private void SelectionForm_Load(object sender, EventArgs e)
         {
-           
+
 
         }
 
@@ -42,21 +44,16 @@ namespace MovieBonanza
 
         private void nextButtonAtSelectionForm_Click(object sender, EventArgs e)
         {
-            
-                nextButtonAtSelectionForm.Enabled = true;
-                OrderForm NavToOrder = new OrderForm();
-                NavToOrder.Show();
-                
-            }
+            //moves to the next form
+            nextButtonAtSelectionForm.Enabled = true;//displays the NextButton
 
-
-
-        
-
-
+            OrderForm NavToOrder = new OrderForm();//instantiate an obj of the next form        
+            NavToOrder.Show();
+            this.Hide();
+        }
         public void MovieDropdownList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (MovieDropdownList.SelectedIndex)
+            switch (MovieDropdownList.SelectedIndex )
             {
                 case 0:
                     nextButtonAtSelectionForm.Enabled = true;
@@ -197,16 +194,11 @@ namespace MovieBonanza
                     CategoryTextBox.Text = "Drama";
                     costTextBox.Text = "$ 1.99";
                     break;
-
             }
-
-
-
         }
-
         private void TitleTextBox_TextChanged(object sender, EventArgs e)
         {
-            
+            TitleTextBox.Text = MovieDropdownList.SelectedItem.ToString();
         }
     }
 }

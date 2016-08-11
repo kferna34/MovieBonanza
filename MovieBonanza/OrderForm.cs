@@ -12,10 +12,11 @@ namespace MovieBonanza
 {
     public partial class OrderForm : Form
     {
+        public OrderForm TitleBoxCopy { get; set; }
         public OrderForm()
         {
             InitializeComponent();
-            
+           
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace MovieBonanza
 
         private void OrderDVDCkBx_CheckedChanged(object sender, EventArgs e)
         {
-            if(OrderDVDCkBx.Checked == true)
+            if (OrderDVDCkBx.Checked == true)
             {
                 hiddenLabel.Visible = true;
                 hiddenTxtBx.Visible = true;
@@ -50,6 +51,7 @@ namespace MovieBonanza
 
         private void backButtonAtOrderForm_Click(object sender, EventArgs e)
         {
+           
             SelectionForm NavToSelection = new SelectionForm();
             NavToSelection.Show();
         }
@@ -60,23 +62,32 @@ namespace MovieBonanza
             NavToStream.Show();
 
         }
-
         private void OrderForm_Load(object sender, EventArgs e)
         {
-           
-           
+            
         }
 
-       public void TitleTextBoxAtOF_TextChanged(object sender, EventArgs e)
+        public void TitleTextBoxAtOF_TextChanged(object sender, EventArgs e)
         {
-            
-
-
+            this.TitleTextBox.Show();
         }
 
         private void OrderGroupBoxAtOrderForm_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        public static implicit operator OrderForm(SelectionForm v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBoxMe aboutBox = new AboutBoxMe();
+
+            // show dialog 
+            aboutBox.ShowDialog();
         }
     }
 }
