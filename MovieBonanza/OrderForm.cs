@@ -105,14 +105,16 @@ namespace MovieBonanza
 
         private void SubTotalTxtBx_TextChanged(object sender, EventArgs e)
         {
+            double amount = double.Parse(costTextBox.Text) * 0.13;
+            
             double subTotal = Convert.ToDouble(SubTotalTxtBx.Text);
             double grandTotal = Convert.ToDouble(GrandTotalTxtBx.Text);
             double taxAmount = Convert.ToDouble(SalesTaxTextBx);
 
-            double tax = (subTotal * 0.13);
+            double grand = double.Parse(costTextBox.Text) * 1.13;
 
-            SubTotalTxtBx.Text = Convert.ToString("" + costTextBox);
-            SalesTaxTextBx.Text = Convert.ToString("" + tax);
+            SubTotalTxtBx.Text = Convert.ToString(""+costTextBox.Text);
+            SalesTaxTextBx.Text = Convert.ToString("" + amount);
             GrandTotalTxtBx.Text = Convert.ToString(subTotal + taxAmount);
 
         }

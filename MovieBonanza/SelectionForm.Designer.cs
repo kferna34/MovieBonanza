@@ -121,7 +121,7 @@
             this.pictureOfMovie.Location = new System.Drawing.Point(15, 29);
             this.pictureOfMovie.Name = "pictureOfMovie";
             this.pictureOfMovie.Size = new System.Drawing.Size(191, 292);
-            this.pictureOfMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureOfMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureOfMovie.TabIndex = 7;
             this.pictureOfMovie.TabStop = false;
             this.pictureOfMovie.Click += new System.EventHandler(this.pictureBox1_Click);

@@ -165,19 +165,18 @@
             this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.TitleLabel);
             this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.CategoryTextBox);
             this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.TitleTextBox);
-            this.MovieSelectedGroupBoxAtOrderForm.Location = new System.Drawing.Point(24, 38);
+            this.MovieSelectedGroupBoxAtOrderForm.Location = new System.Drawing.Point(41, 27);
             this.MovieSelectedGroupBoxAtOrderForm.Name = "MovieSelectedGroupBoxAtOrderForm";
-            this.MovieSelectedGroupBoxAtOrderForm.Size = new System.Drawing.Size(269, 344);
+            this.MovieSelectedGroupBoxAtOrderForm.Size = new System.Drawing.Size(269, 369);
             this.MovieSelectedGroupBoxAtOrderForm.TabIndex = 4;
             this.MovieSelectedGroupBoxAtOrderForm.TabStop = false;
             this.MovieSelectedGroupBoxAtOrderForm.Text = "Movie Selected";
             // 
             // MoviePic
             // 
-            this.MoviePic.Location = new System.Drawing.Point(11, 137);
+            this.MoviePic.Location = new System.Drawing.Point(9, 101);
             this.MoviePic.Name = "MoviePic";
-            this.MoviePic.Size = new System.Drawing.Size(235, 193);
-            this.MoviePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.MoviePic.Size = new System.Drawing.Size(235, 262);
             this.MoviePic.TabIndex = 4;
             this.MoviePic.TabStop = false;
             this.MoviePic.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -185,40 +184,40 @@
             // CategoryLbl
             // 
             this.CategoryLbl.AutoSize = true;
-            this.CategoryLbl.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CategoryLbl.Location = new System.Drawing.Point(6, 76);
+            this.CategoryLbl.Font = new System.Drawing.Font("Tahoma", 11F);
+            this.CategoryLbl.Location = new System.Drawing.Point(6, 60);
             this.CategoryLbl.Name = "CategoryLbl";
-            this.CategoryLbl.Size = new System.Drawing.Size(84, 23);
+            this.CategoryLbl.Size = new System.Drawing.Size(67, 18);
             this.CategoryLbl.TabIndex = 3;
             this.CategoryLbl.Text = "Category";
             // 
             // TitleLabel
             // 
             this.TitleLabel.AutoSize = true;
-            this.TitleLabel.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.TitleLabel.Font = new System.Drawing.Font("Tahoma", 11F);
             this.TitleLabel.Location = new System.Drawing.Point(3, 16);
             this.TitleLabel.Name = "TitleLabel";
-            this.TitleLabel.Size = new System.Drawing.Size(45, 23);
+            this.TitleLabel.Size = new System.Drawing.Size(35, 18);
             this.TitleLabel.TabIndex = 2;
             this.TitleLabel.Text = "Title";
             // 
             // CategoryTextBox
             // 
-            this.CategoryTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.CategoryTextBox.Location = new System.Drawing.Point(6, 102);
+            this.CategoryTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.CategoryTextBox.Location = new System.Drawing.Point(9, 79);
             this.CategoryTextBox.Name = "CategoryTextBox";
             this.CategoryTextBox.ReadOnly = true;
-            this.CategoryTextBox.Size = new System.Drawing.Size(240, 26);
+            this.CategoryTextBox.Size = new System.Drawing.Size(240, 20);
             this.CategoryTextBox.TabIndex = 1;
             this.CategoryTextBox.TextChanged += new System.EventHandler(this.CategoryTextBoxAtOF_TextChanged);
             // 
             // TitleTextBox
             // 
-            this.TitleTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.TitleTextBox.Location = new System.Drawing.Point(6, 40);
+            this.TitleTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.TitleTextBox.Location = new System.Drawing.Point(9, 37);
             this.TitleTextBox.Name = "TitleTextBox";
             this.TitleTextBox.ReadOnly = true;
-            this.TitleTextBox.Size = new System.Drawing.Size(240, 26);
+            this.TitleTextBox.Size = new System.Drawing.Size(240, 20);
             this.TitleTextBox.TabIndex = 0;
             this.TitleTextBox.TextChanged += new System.EventHandler(this.TitleTextBoxAtOF_TextChanged);
             // 
