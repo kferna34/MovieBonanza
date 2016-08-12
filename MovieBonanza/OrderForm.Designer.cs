@@ -176,7 +176,7 @@
             // 
             this.MoviePic.Location = new System.Drawing.Point(9, 101);
             this.MoviePic.Name = "MoviePic";
-            this.MoviePic.Size = new System.Drawing.Size(235, 262);
+            this.MoviePic.Size = new System.Drawing.Size(260, 262);
             this.MoviePic.TabIndex = 4;
             this.MoviePic.TabStop = false;
             this.MoviePic.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -416,11 +416,11 @@
         private System.Windows.Forms.Label costLabel;
         private System.Windows.Forms.TextBox hiddenTxtBx;
         private System.Windows.Forms.Label hiddenLabel;
-        private System.Windows.Forms.CheckBox OrderDVDCkBx;
         public System.Windows.Forms.TextBox TitleTextBox;
         public System.Windows.Forms.TextBox CategoryTextBox;
         public System.Windows.Forms.PictureBox MoviePic;
         public System.Windows.Forms.TextBox costTextBox;
         public System.Windows.Forms.TextBox SubTotalTxtBx;
+        public System.Windows.Forms.CheckBox OrderDVDCkBx;
     }
 }

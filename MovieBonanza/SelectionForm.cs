@@ -54,9 +54,8 @@ namespace MovieBonanza
             NavToOrder.TitleTextBox.Text = this.TitleTextBox.Text;//passes the title to the order form  
             NavToOrder.CategoryTextBox.Text = this.CategoryTextBox.Text;//passes the category to the order form
             NavToOrder.costTextBox.Text = this.costTextBox.Text;//passes the cost to the order form
-            NavToOrder.MoviePic.Image = this.pictureOfMovie.Image;
+            NavToOrder.MoviePic.Image = this.pictureOfMovie.Image; //passes the picture to the order form
            
-
             NavToOrder.Show();
             this.Hide();
         }
@@ -219,6 +218,7 @@ namespace MovieBonanza
                     CategoryTextBox.Text = "Drama";
                     costTextBox.Text = "$ 1.99";
                     pictureOfMovie.Image = Properties.Resources.waitingforever;
+                    
                     break;
             }
         }

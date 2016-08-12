@@ -195,7 +195,7 @@
             // nextButtonAtSelectionForm
             // 
             this.nextButtonAtSelectionForm.Enabled = false;
-            this.nextButtonAtSelectionForm.Location = new System.Drawing.Point(637, 354);
+            this.nextButtonAtSelectionForm.Location = new System.Drawing.Point(615, 354);
             this.nextButtonAtSelectionForm.Name = "nextButtonAtSelectionForm";
             this.nextButtonAtSelectionForm.Size = new System.Drawing.Size(123, 28);
             this.nextButtonAtSelectionForm.TabIndex = 4;
