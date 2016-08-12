@@ -49,7 +49,7 @@
             // 
             this.WelcomeLabel.AutoSize = true;
             this.WelcomeLabel.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomeLabel.Location = new System.Drawing.Point(13, 13);
+            this.WelcomeLabel.Location = new System.Drawing.Point(13, 9);
             this.WelcomeLabel.Name = "WelcomeLabel";
             this.WelcomeLabel.Size = new System.Drawing.Size(630, 25);
             this.WelcomeLabel.TabIndex = 0;
@@ -109,19 +109,19 @@
             this.SelectionGroupBox.Controls.Add(this.TitleTextBox);
             this.SelectionGroupBox.Controls.Add(this.textBox1);
             this.SelectionGroupBox.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectionGroupBox.Location = new System.Drawing.Point(274, 79);
+            this.SelectionGroupBox.Location = new System.Drawing.Point(276, 37);
             this.SelectionGroupBox.Name = "SelectionGroupBox";
-            this.SelectionGroupBox.Size = new System.Drawing.Size(466, 171);
+            this.SelectionGroupBox.Size = new System.Drawing.Size(484, 327);
             this.SelectionGroupBox.TabIndex = 3;
             this.SelectionGroupBox.TabStop = false;
             this.SelectionGroupBox.Text = "Your Selection";
             // 
             // pictureOfMovie
             // 
-            this.pictureOfMovie.Location = new System.Drawing.Point(15, 32);
+            this.pictureOfMovie.Location = new System.Drawing.Point(15, 29);
             this.pictureOfMovie.Name = "pictureOfMovie";
-            this.pictureOfMovie.Size = new System.Drawing.Size(151, 117);
-            this.pictureOfMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureOfMovie.Size = new System.Drawing.Size(191, 292);
+            this.pictureOfMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureOfMovie.TabIndex = 7;
             this.pictureOfMovie.TabStop = false;
             this.pictureOfMovie.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -130,7 +130,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.label1.Location = new System.Drawing.Point(370, 85);
+            this.label1.Location = new System.Drawing.Point(401, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 23);
             this.label1.TabIndex = 6;
@@ -140,7 +140,7 @@
             // 
             this.CategoryLabel.AutoSize = true;
             this.CategoryLabel.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.CategoryLabel.Location = new System.Drawing.Point(181, 85);
+            this.CategoryLabel.Location = new System.Drawing.Point(212, 98);
             this.CategoryLabel.Name = "CategoryLabel";
             this.CategoryLabel.Size = new System.Drawing.Size(84, 23);
             this.CategoryLabel.TabIndex = 5;
@@ -150,7 +150,7 @@
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.titleLabel.Location = new System.Drawing.Point(181, 29);
+            this.titleLabel.Location = new System.Drawing.Point(212, 42);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(45, 23);
             this.titleLabel.TabIndex = 4;
@@ -159,7 +159,7 @@
             // costTextBox
             // 
             this.costTextBox.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.costTextBox.Location = new System.Drawing.Point(337, 111);
+            this.costTextBox.Location = new System.Drawing.Point(368, 124);
             this.costTextBox.Name = "costTextBox";
             this.costTextBox.ReadOnly = true;
             this.costTextBox.Size = new System.Drawing.Size(110, 27);
@@ -168,7 +168,7 @@
             // CategoryTextBox
             // 
             this.CategoryTextBox.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.CategoryTextBox.Location = new System.Drawing.Point(185, 111);
+            this.CategoryTextBox.Location = new System.Drawing.Point(216, 124);
             this.CategoryTextBox.Name = "CategoryTextBox";
             this.CategoryTextBox.ReadOnly = true;
             this.CategoryTextBox.Size = new System.Drawing.Size(123, 27);
@@ -177,7 +177,7 @@
             // TitleTextBox
             // 
             this.TitleTextBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleTextBox.Location = new System.Drawing.Point(185, 55);
+            this.TitleTextBox.Location = new System.Drawing.Point(216, 68);
             this.TitleTextBox.Name = "TitleTextBox";
             this.TitleTextBox.ReadOnly = true;
             this.TitleTextBox.Size = new System.Drawing.Size(262, 27);
@@ -195,7 +195,7 @@
             // nextButtonAtSelectionForm
             // 
             this.nextButtonAtSelectionForm.Enabled = false;
-            this.nextButtonAtSelectionForm.Location = new System.Drawing.Point(637, 329);
+            this.nextButtonAtSelectionForm.Location = new System.Drawing.Point(637, 354);
             this.nextButtonAtSelectionForm.Name = "nextButtonAtSelectionForm";
             this.nextButtonAtSelectionForm.Size = new System.Drawing.Size(123, 28);
             this.nextButtonAtSelectionForm.TabIndex = 4;

@@ -93,6 +93,7 @@
             this.Controls.Add(this.ThankYoulabel);
             this.Controls.Add(this.OKButton);
             this.Name = "StreamForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StreamForm";
             this.Load += new System.EventHandler(this.StreamForm_Load);
             this.ResumeLayout(false);

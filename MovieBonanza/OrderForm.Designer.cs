@@ -39,6 +39,7 @@
             this.CancelbuttonAtOrderForm = new System.Windows.Forms.Button();
             this.StreamButtonAtOrderForm = new System.Windows.Forms.Button();
             this.MovieSelectedGroupBoxAtOrderForm = new System.Windows.Forms.GroupBox();
+            this.MoviePic = new System.Windows.Forms.PictureBox();
             this.CategoryLbl = new System.Windows.Forms.Label();
             this.TitleLabel = new System.Windows.Forms.Label();
             this.CategoryTextBox = new System.Windows.Forms.TextBox();
@@ -55,11 +56,10 @@
             this.SalesTaxTextBx = new System.Windows.Forms.TextBox();
             this.SubTotalTxtBx = new System.Windows.Forms.TextBox();
             this.costTextBox = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.MovieSelectedGroupBoxAtOrderForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MoviePic)).BeginInit();
             this.OrderGroupBoxAtOrderForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -160,7 +160,7 @@
             // 
             // MovieSelectedGroupBoxAtOrderForm
             // 
-            this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.pictureBox1);
+            this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.MoviePic);
             this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.CategoryLbl);
             this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.TitleLabel);
             this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.CategoryTextBox);
@@ -171,6 +171,16 @@
             this.MovieSelectedGroupBoxAtOrderForm.TabIndex = 4;
             this.MovieSelectedGroupBoxAtOrderForm.TabStop = false;
             this.MovieSelectedGroupBoxAtOrderForm.Text = "Movie Selected";
+            // 
+            // MoviePic
+            // 
+            this.MoviePic.Location = new System.Drawing.Point(11, 137);
+            this.MoviePic.Name = "MoviePic";
+            this.MoviePic.Size = new System.Drawing.Size(235, 193);
+            this.MoviePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.MoviePic.TabIndex = 4;
+            this.MoviePic.TabStop = false;
+            this.MoviePic.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // CategoryLbl
             // 
@@ -319,6 +329,7 @@
             this.GrandTotalTxtBx.ReadOnly = true;
             this.GrandTotalTxtBx.Size = new System.Drawing.Size(142, 20);
             this.GrandTotalTxtBx.TabIndex = 3;
+            this.GrandTotalTxtBx.TextChanged += new System.EventHandler(this.GrandTotalTxtBx_TextChanged);
             // 
             // SalesTaxTextBx
             // 
@@ -328,6 +339,7 @@
             this.SalesTaxTextBx.ReadOnly = true;
             this.SalesTaxTextBx.Size = new System.Drawing.Size(142, 20);
             this.SalesTaxTextBx.TabIndex = 2;
+            this.SalesTaxTextBx.TextChanged += new System.EventHandler(this.SalesTaxTextBx_TextChanged);
             // 
             // SubTotalTxtBx
             // 
@@ -337,6 +349,7 @@
             this.SubTotalTxtBx.ReadOnly = true;
             this.SubTotalTxtBx.Size = new System.Drawing.Size(142, 20);
             this.SubTotalTxtBx.TabIndex = 1;
+            this.SubTotalTxtBx.TextChanged += new System.EventHandler(this.SubTotalTxtBx_TextChanged);
             // 
             // costTextBox
             // 
@@ -347,15 +360,6 @@
             this.costTextBox.Size = new System.Drawing.Size(142, 20);
             this.costTextBox.TabIndex = 0;
             this.costTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(11, 137);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(235, 193);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // OrderForm
             // 
@@ -374,15 +378,16 @@
             this.MinimizeBox = false;
             this.Name = "OrderForm";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrderForm";
             this.Load += new System.EventHandler(this.OrderForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.MovieSelectedGroupBoxAtOrderForm.ResumeLayout(false);
             this.MovieSelectedGroupBoxAtOrderForm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MoviePic)).EndInit();
             this.OrderGroupBoxAtOrderForm.ResumeLayout(false);
             this.OrderGroupBoxAtOrderForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -406,7 +411,6 @@
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.TextBox GrandTotalTxtBx;
         private System.Windows.Forms.TextBox SalesTaxTextBx;
-        private System.Windows.Forms.TextBox SubTotalTxtBx;
         private System.Windows.Forms.Label GrandTotalLbl;
         private System.Windows.Forms.Label SalesTaxLbl;
         private System.Windows.Forms.Label subTotalLbl;
@@ -416,7 +420,8 @@
         private System.Windows.Forms.CheckBox OrderDVDCkBx;
         public System.Windows.Forms.TextBox TitleTextBox;
         public System.Windows.Forms.TextBox CategoryTextBox;
-        public System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.PictureBox MoviePic;
         public System.Windows.Forms.TextBox costTextBox;
+        public System.Windows.Forms.TextBox SubTotalTxtBx;
     }
 }

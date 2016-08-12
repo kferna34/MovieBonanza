@@ -54,49 +54,51 @@ namespace MovieBonanza
             NavToOrder.TitleTextBox.Text = this.TitleTextBox.Text;//passes the title to the order form  
             NavToOrder.CategoryTextBox.Text = this.CategoryTextBox.Text;//passes the category to the order form
             NavToOrder.costTextBox.Text = this.costTextBox.Text;//passes the cost to the order form
+            NavToOrder.MoviePic.Image = this.pictureOfMovie.Image;
+           
 
             NavToOrder.Show();
-
             this.Hide();
         }
         public void MovieDropdownList_SelectedIndexChanged(object sender, EventArgs e)
         {
-         
-            switch (MovieDropdownList.SelectedIndex )
+
+            switch (MovieDropdownList.SelectedIndex)
             {
                 case 0:
                     nextButtonAtSelectionForm.Enabled = true;
-                    TitleTextBox.Text = "Ceday Rapids";         
+                    TitleTextBox.Text = "Ceday Rapids";
                     CategoryTextBox.Text = "Comedy";
                     costTextBox.Text = " $ 1.99 ";
+                    pictureOfMovie.Image = Properties.Resources.cedarrapids;
                     break;
-
                 case 1:
                     nextButtonAtSelectionForm.Enabled = true;
                     TitleTextBox.Text = "Company Men";
                     CategoryTextBox.Text = "Drama";
                     costTextBox.Text = " $ 1.99";
-
+                    pictureOfMovie.Image = Properties.Resources.companymen;
                     break;
                 case 2:
                     nextButtonAtSelectionForm.Enabled = true;
                     TitleTextBox.Text = " Death Race 2";
                     CategoryTextBox.Text = "Action";
                     costTextBox.Text = " $ 2.99";
-
+                    pictureOfMovie.Image = Properties.Resources.deathrace2;
                     break;
                 case 3:
                     nextButtonAtSelectionForm.Enabled = true;
                     TitleTextBox.Text = "FootLoose";
                     CategoryTextBox.Text = "New Release";
                     costTextBox.Text = " $ 4.99";
-
+                    pictureOfMovie.Image = Properties.Resources.footloose;
                     break;
                 case 4:
                     nextButtonAtSelectionForm.Enabled = true;
                     TitleTextBox.Text = "Gnomeo and Juliet";
                     CategoryTextBox.Text = "Family";
                     costTextBox.Text = "$ 0.99";
+                    pictureOfMovie.Image = Properties.Resources.gnomeoandjuliet;
                     break;
 
                 case 5:
@@ -104,6 +106,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = " I am Number Four";
                     CategoryTextBox.Text = "Sci-Fi";
                     costTextBox.Text = "$ 2.99";
+                    pictureOfMovie.Image = Properties.Resources.iamnumberfour;
                     break;
 
                 case 6:
@@ -111,6 +114,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = " Just Go With It";
                     CategoryTextBox.Text = "Comedy";
                     costTextBox.Text = "$ 1.99";
+                    pictureOfMovie.Image = Properties.Resources.justgowithit;
                     break;
 
                 case 7:
@@ -118,6 +122,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = "No String Attached";
                     CategoryTextBox.Text = "Comedy";
                     costTextBox.Text = "$ 1.99";
+                    pictureOfMovie.Image = Properties.Resources.nostringsattached;
                     break;
 
                 case 8:
@@ -125,6 +130,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = "Real Steel";
                     CategoryTextBox.Text = "New Release";
                     costTextBox.Text = "$ 4.99";
+                    pictureOfMovie.Image = Properties.Resources.realsteel;
                     break;
 
                 case 9:
@@ -132,6 +138,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = "Sanctrum";
                     CategoryTextBox.Text = "Action";
                     costTextBox.Text = "$ 2.99";
+                    pictureOfMovie.Image = Properties.Resources.sanctum;
                     break;
 
                 case 10:
@@ -139,6 +146,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = "Season of the Witch";
                     CategoryTextBox.Text = "Sci-Fi";
                     costTextBox.Text = "$ 2.99";
+                    pictureOfMovie.Image = Properties.Resources.seasonofthewitch;
                     break;
 
                 case 11:
@@ -146,6 +154,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = "The Dilemma";
                     CategoryTextBox.Text = "Comedy";
                     costTextBox.Text = "$ 1.99";
+                    pictureOfMovie.Image = Properties.Resources.thedilemma;
                     break;
 
                 case 12:
@@ -153,6 +162,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = "The Eagle";
                     CategoryTextBox.Text = "Action";
                     costTextBox.Text = "$ 2.99";
+                    pictureOfMovie.Image = Properties.Resources.theeagle;
                     break;
 
                 case 13:
@@ -160,6 +170,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = "The Green Hornet";
                     CategoryTextBox.Text = "Action";
                     costTextBox.Text = "$ 2.99";
+                    pictureOfMovie.Image = Properties.Resources.theeagle;
                     break;
 
                 case 14:
@@ -167,6 +178,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = "The Mechanic";
                     CategoryTextBox.Text = "Action";
                     costTextBox.Text = "$ 2.99";
+                    pictureOfMovie.Image = Properties.Resources.themechanic;
                     break;
 
                 case 15:
@@ -174,6 +186,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = "The Other Woman";
                     CategoryTextBox.Text = "Action";
                     costTextBox.Text = "$ 2.99";
+                    pictureOfMovie.Image = Properties.Resources.theotherwoman;
                     break;
 
                 case 16:
@@ -181,6 +194,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = "The Rite";
                     CategoryTextBox.Text = "Horror";
                     costTextBox.Text = "$ 2.99";
+                    pictureOfMovie.Image = Properties.Resources.therite;
                     break;
 
                 case 17:
@@ -188,6 +202,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = "The Roommate";
                     CategoryTextBox.Text = "Thriller";
                     costTextBox.Text = "$ 1.99";
+                    pictureOfMovie.Image = Properties.Resources.theroommate;
                     break;
 
                 case 18:
@@ -195,6 +210,7 @@ namespace MovieBonanza
                     TitleTextBox.Text = "The Way Back";
                     CategoryTextBox.Text = "Drama";
                     costTextBox.Text = "$ 1.99";
+                    pictureOfMovie.Image = Properties.Resources.thewayback;
                     break;
 
                 case 19:
@@ -202,12 +218,13 @@ namespace MovieBonanza
                     TitleTextBox.Text = "Waiting for Forever";
                     CategoryTextBox.Text = "Drama";
                     costTextBox.Text = "$ 1.99";
+                    pictureOfMovie.Image = Properties.Resources.waitingforever;
                     break;
             }
         }
         private void TitleTextBox_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

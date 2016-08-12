@@ -16,7 +16,7 @@ namespace MovieBonanza
         public OrderForm()
         {
             InitializeComponent();
-           
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -47,25 +47,28 @@ namespace MovieBonanza
         {
             SelectionForm NavToSelection = new SelectionForm();//sends the user back to the selction menu
             NavToSelection.Show();
+            this.Hide();
         }
 
         private void backButtonAtOrderForm_Click(object sender, EventArgs e)
         {
-           
+
             SelectionForm NavToSelection = new SelectionForm(); //sends the user back to the selection menu
             NavToSelection.Show();
+            this.Hide();
         }
 
         private void StreamButtonAtOrderForm_Click(object sender, EventArgs e)
         {
             StreamForm NavToStream = new StreamForm();//sends the user to the stream form 
             NavToStream.Show();
+            this.Hide();
 
         }
         private void OrderForm_Load(object sender, EventArgs e)
         {
-           
-    }
+
+        }
 
         public void TitleTextBoxAtOF_TextChanged(object sender, EventArgs e)
         {
@@ -96,6 +99,30 @@ namespace MovieBonanza
         }
 
         private void CategoryTextBoxAtOF_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SubTotalTxtBx_TextChanged(object sender, EventArgs e)
+        {
+            double subTotal = Convert.ToDouble(SubTotalTxtBx.Text);
+            double grandTotal = Convert.ToDouble(GrandTotalTxtBx.Text);
+            double taxAmount = Convert.ToDouble(SalesTaxTextBx);
+
+            double tax = (subTotal * 0.13);
+
+            SubTotalTxtBx.Text = Convert.ToString("" + costTextBox);
+            SalesTaxTextBx.Text = Convert.ToString("" + tax);
+            GrandTotalTxtBx.Text = Convert.ToString(subTotal + taxAmount);
+
+        }
+
+        private void GrandTotalTxtBx_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SalesTaxTextBx_TextChanged(object sender, EventArgs e)
         {
 
         }
