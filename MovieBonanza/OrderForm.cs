@@ -34,7 +34,8 @@ namespace MovieBonanza
             if (OrderDVDCkBx.Checked == true)
             {
                 hiddenLabel.Visible = true;
-                hiddenTxtBx.Visible = true;
+                hiddenTxtBx.Visible = true;       
+                      
             }
             else
             {
@@ -42,7 +43,6 @@ namespace MovieBonanza
                 hiddenTxtBx.Visible = false;
             }
         }
-
         private void CancelbuttonAtOrderForm_Click(object sender, EventArgs e)
         {
             SelectionForm NavToSelection = new SelectionForm();//sends the user back to the selction menu
@@ -73,6 +73,7 @@ namespace MovieBonanza
         public void TitleTextBoxAtOF_TextChanged(object sender, EventArgs e)
         {
             this.listInfo.Show();
+
         }
 
         private void OrderGroupBoxAtOrderForm_Enter(object sender, EventArgs e)
@@ -88,9 +89,10 @@ namespace MovieBonanza
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AboutBoxMe aboutBox = new AboutBoxMe();
-
             // show dialog 
+
             aboutBox.ShowDialog();
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -100,34 +102,69 @@ namespace MovieBonanza
 
         private void CategoryTextBoxAtOF_TextChanged(object sender, EventArgs e)
         {
+            //this sets of codes basically checks the category box, then inputs the specific amount in the cost textbox
+
+            if(CategoryTextBox.Text == "Drama")
+            {
+                this.SubTotalTxtBx.Text = "$1.99";              
+            }
+            else if( CategoryTextBox.Text == "Comedy")
+            {
+                this.SubTotalTxtBx.Text = "$1.99";
+            }
+            else if (CategoryTextBox.Text == "Action")
+            {
+                this.SubTotalTxtBx.Text = "$2.99";
+            }
+            else if (CategoryTextBox.Text == "Sci-Fi")
+            {
+                this.SubTotalTxtBx.Text = "$2.99";
+            }
+            else if (CategoryTextBox.Text == "Horror")
+            {
+                this.SubTotalTxtBx.Text = "$2.99";
+            }
+            else if (CategoryTextBox.Text == "Thriller")
+            {
+                this.SubTotalTxtBx.Text = "$1.99";
+            }
+            else if (CategoryTextBox.Text == "Family")
+            {
+                this.SubTotalTxtBx.Text = "$0.99";
+            }
+            else if (CategoryTextBox.Text == "New Release")
+            {
+                this.SubTotalTxtBx.Text = "$4.99";
+            }
 
         }
 
         private void SubTotalTxtBx_TextChanged(object sender, EventArgs e)
         {
-            double cost = Convert.ToDouble(costTextBox.Text);
-            double subTotal = Convert.ToDouble(SubTotalTxtBx.Text);
-            double grandTotal = Convert.ToDouble(GrandTotalTxtBx.Text);
-            double taxAmount = Convert.ToDouble(SalesTaxTextBx);
+            
+            //double cost = Convert.ToDouble(costTextBox.Text);
+            //double subTotal = Convert.ToDouble(SubTotalTxtBx.Text);
+            //double grandTotal = Convert.ToDouble(GrandTotalTxtBx.Text);
+            //double taxAmount = Convert.ToDouble(SalesTaxTextBx);
 
-            double baseCost = (cost * 1);
+            //double baseCost = (cost * 1);
 
-            SubTotalTxtBx.Text = Convert.ToString("" + cost);
-            SalesTaxTextBx.Text = Convert.ToString(baseCost * 0.13);
+            //SubTotalTxtBx.Text = Convert.ToString("" + cost);
+            //SalesTaxTextBx.Text = Convert.ToString(baseCost * 0.13);
 
-            if (OrderDVDCkBx.Checked == true)
-            {
-                grandTotal = baseCost * 1.13 + 10;
-                this.GrandTotalTxtBx.Text = Convert.ToString("" + baseCost * 1.13 + 10);
-            }
-            else
-            {
-                grandTotal = baseCost * 1.13;
-                this.GrandTotalTxtBx.Text = Convert.ToString("" + baseCost * 1.13);
-            }
+            //if (OrderDVDCkBx.Checked == true)
+            //{
+            //    grandTotal = baseCost * 1.13 + 10;
+            //    this.GrandTotalTxtBx.Text = Convert.ToString("" + baseCost * 1.13 + 10);
+            //}
+            //else
+            //{
+            //    grandTotal = baseCost * 1.13;
+            //    this.GrandTotalTxtBx.Text = Convert.ToString("" + baseCost * 1.13);
+            //}
 
-            this.SubTotalTxtBx.Text = Convert.ToString("" + cost);
-            this.SalesTaxTextBx.Text = Convert.ToString("" + baseCost * 0.13);
+            //this.SubTotalTxtBx.Text = Convert.ToString("" + cost);
+            //this.SalesTaxTextBx.Text = Convert.ToString("" + baseCost * 0.13);
 
 
         }
