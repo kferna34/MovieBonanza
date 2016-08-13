@@ -408,7 +408,6 @@
         private System.Windows.Forms.GroupBox OrderGroupBoxAtOrderForm;
         private System.Windows.Forms.Label CategoryLbl;
         private System.Windows.Forms.Label TitleLabel;
-        private System.Windows.Forms.TextBox GrandTotalTxtBx;
         private System.Windows.Forms.TextBox SalesTaxTextBx;
         private System.Windows.Forms.Label GrandTotalLbl;
         private System.Windows.Forms.Label SalesTaxLbl;
@@ -422,5 +421,6 @@
         public System.Windows.Forms.TextBox costTextBox;
         public System.Windows.Forms.TextBox SubTotalTxtBx;
         public System.Windows.Forms.CheckBox OrderDVDCkBx;
+        public System.Windows.Forms.TextBox GrandTotalTxtBx;
     }
 }

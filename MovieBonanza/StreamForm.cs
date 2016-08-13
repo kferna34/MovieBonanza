@@ -29,7 +29,17 @@ namespace MovieBonanza
 
         private void CreditCardCharged_Click(object sender, EventArgs e)
         {
-            Text= "Your creditcard will be charged {0}"+this.listInfo;
+            listInfo.Show();
+        }
+
+        private void streamingMessage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
