@@ -12,6 +12,7 @@ namespace MovieBonanza
 {
     public partial class StreamForm : Form
     {
+        public OrderForm listInfo { get; set; }
         public StreamForm()
         {
             InitializeComponent();
@@ -20,23 +21,15 @@ namespace MovieBonanza
         private void StreamForm_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void movieStartsLabel_Click(object sender, EventArgs e)
-        {
-            
-            movieStartsLabel.Text = "{0} will begin streaming shortly";
-        }
-
-        private void creditcardBilledLabel_Click(object sender, EventArgs e)
-        {
-            creditcardBilledLabel.Text = "";
-            creditcardBilledLabel.Text=("Your Credit card will be charged {0}");
-        }
-
+        }     
         private void OKButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void CreditCardCharged_Click(object sender, EventArgs e)
+        {
+            Text= "Your creditcard will be charged {0}"+this.listInfo;
         }
     }
 }

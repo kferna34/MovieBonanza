@@ -30,9 +30,11 @@
         {
             this.OKButton = new System.Windows.Forms.Button();
             this.ThankYoulabel = new System.Windows.Forms.Label();
-            this.creditcardBilledLabel = new System.Windows.Forms.Label();
             this.selectionLabel = new System.Windows.Forms.Label();
-            this.movieStartsLabel = new System.Windows.Forms.Label();
+            this.CreditCardCharged = new System.Windows.Forms.Label();
+            this.streamingMessage = new System.Windows.Forms.Label();
+            this.creditChargedOtherLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // OKButton
@@ -55,16 +57,6 @@
             this.ThankYoulabel.TabIndex = 1;
             this.ThankYoulabel.Text = "Thank you for choosing Movie Bonanza!";
             // 
-            // creditcardBilledLabel
-            // 
-            this.creditcardBilledLabel.AutoSize = true;
-            this.creditcardBilledLabel.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.creditcardBilledLabel.Location = new System.Drawing.Point(231, 129);
-            this.creditcardBilledLabel.Name = "creditcardBilledLabel";
-            this.creditcardBilledLabel.Size = new System.Drawing.Size(0, 23);
-            this.creditcardBilledLabel.TabIndex = 2;
-            this.creditcardBilledLabel.Click += new System.EventHandler(this.creditcardBilledLabel_Click);
-            // 
             // selectionLabel
             // 
             this.selectionLabel.AutoSize = true;
@@ -73,23 +65,58 @@
             this.selectionLabel.Size = new System.Drawing.Size(0, 13);
             this.selectionLabel.TabIndex = 3;
             // 
-            // movieStartsLabel
+            // CreditCardCharged
             // 
-            this.movieStartsLabel.AutoSize = true;
-            this.movieStartsLabel.Location = new System.Drawing.Point(89, 114);
-            this.movieStartsLabel.Name = "movieStartsLabel";
-            this.movieStartsLabel.Size = new System.Drawing.Size(0, 13);
-            this.movieStartsLabel.TabIndex = 4;
-            this.movieStartsLabel.Click += new System.EventHandler(this.movieStartsLabel_Click);
+            this.CreditCardCharged.AutoSize = true;
+            this.CreditCardCharged.Font = new System.Drawing.Font("Tahoma", 16F);
+            this.CreditCardCharged.Location = new System.Drawing.Point(543, 123);
+            this.CreditCardCharged.Name = "CreditCardCharged";
+            this.CreditCardCharged.Size = new System.Drawing.Size(54, 27);
+            this.CreditCardCharged.TabIndex = 5;
+            this.CreditCardCharged.Text = "     .";
+            this.CreditCardCharged.Click += new System.EventHandler(this.CreditCardCharged_Click);
+            // 
+            // streamingMessage
+            // 
+            this.streamingMessage.AutoSize = true;
+            this.streamingMessage.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.streamingMessage.Location = new System.Drawing.Point(243, 165);
+            this.streamingMessage.Name = "streamingMessage";
+            this.streamingMessage.Size = new System.Drawing.Size(148, 23);
+            this.streamingMessage.TabIndex = 6;
+            this.streamingMessage.Text = "                      ,";
+            this.streamingMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // creditChargedOtherLabel
+            // 
+            this.creditChargedOtherLabel.AutoSize = true;
+            this.creditChargedOtherLabel.Font = new System.Drawing.Font("Tahoma", 16F);
+            this.creditChargedOtherLabel.Location = new System.Drawing.Point(205, 123);
+            this.creditChargedOtherLabel.Name = "creditChargedOtherLabel";
+            this.creditChargedOtherLabel.Size = new System.Drawing.Size(332, 27);
+            this.creditChargedOtherLabel.TabIndex = 7;
+            this.creditChargedOtherLabel.Text = "Your Credit card will be charged:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.label1.Location = new System.Drawing.Point(397, 165);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(159, 23);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Will begin shortly.";
             // 
             // StreamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 394);
-            this.Controls.Add(this.movieStartsLabel);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.creditChargedOtherLabel);
+            this.Controls.Add(this.streamingMessage);
+            this.Controls.Add(this.CreditCardCharged);
             this.Controls.Add(this.selectionLabel);
-            this.Controls.Add(this.creditcardBilledLabel);
             this.Controls.Add(this.ThankYoulabel);
             this.Controls.Add(this.OKButton);
             this.Name = "StreamForm";
@@ -105,8 +132,11 @@
 
         private System.Windows.Forms.Button OKButton;
         private System.Windows.Forms.Label ThankYoulabel;
-        private System.Windows.Forms.Label creditcardBilledLabel;
+      
         private System.Windows.Forms.Label selectionLabel;
-        private System.Windows.Forms.Label movieStartsLabel;
+        public System.Windows.Forms.Label CreditCardCharged;
+        public System.Windows.Forms.Label streamingMessage;
+        public System.Windows.Forms.Label creditChargedOtherLabel;
+        public System.Windows.Forms.Label label1;
     }
 }

@@ -31,7 +31,7 @@ namespace MovieBonanza
 
         private void OrderDVDCkBx_CheckedChanged(object sender, EventArgs e)
         {
-           
+            this.GrandTotalTxtBx.Refresh();
             if (OrderDVDCkBx.Checked == true)
             {
                 this.GrandTotalTxtBx.Refresh();
@@ -42,61 +42,126 @@ namespace MovieBonanza
                 {
                     this.SubTotalTxtBx.Text = "$1.99";
                     this.SalesTaxTextBx.Text = string.Format($"{1.99 * 0.13:C}").ToString();
-                    
-                    this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13+10:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13 + 10:C}").ToString();
                 }
                 else if (CategoryTextBox.Text == "Comedy")
                 {
                     this.SubTotalTxtBx.Text = "$1.99";
                     this.SalesTaxTextBx.Text = string.Format($"{1.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13+10:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13 + 10:C}").ToString();
                 }
                 else if (CategoryTextBox.Text == "Action")
                 {
                     this.SubTotalTxtBx.Text = "$2.99";
                     this.SalesTaxTextBx.Text = string.Format($"{2.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13+10:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13 + 10:C}").ToString();
                 }
                 else if (CategoryTextBox.Text == "Sci-Fi")
                 {
                     this.SubTotalTxtBx.Text = "$2.99";
                     this.SalesTaxTextBx.Text = string.Format($"{2.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13+10:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13 + 10:C}").ToString();
                 }
                 else if (CategoryTextBox.Text == "Horror")
                 {
                     this.SubTotalTxtBx.Text = "$2.99";
                     this.SalesTaxTextBx.Text = string.Format($"{2.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13+10:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13 + 10:C}").ToString();
                 }
                 else if (CategoryTextBox.Text == "Thriller")
                 {
                     this.SubTotalTxtBx.Text = "$1.99";
                     this.SalesTaxTextBx.Text = string.Format($"{1.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13+10:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13 + 10:C}").ToString();
                 }
                 else if (CategoryTextBox.Text == "Family")
                 {
                     this.SubTotalTxtBx.Text = "$0.99";
                     this.SalesTaxTextBx.Text = string.Format($"{0.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{0.99 * 1.13+10:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{0.99 * 1.13 + 10:C}").ToString();
                 }
                 else if (CategoryTextBox.Text == "New Release")
                 {
                     this.SubTotalTxtBx.Text = "$4.99";
                     this.SalesTaxTextBx.Text = string.Format($"{4.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{4.99 * 1.13+10:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{4.99 * 1.13 + 10:C}").ToString();
                 }
 
             }
+            this.GrandTotalTxtBx.Refresh();
             if (OrderDVDCkBx.Checked == false)
             {
                 this.GrandTotalTxtBx.Refresh();
                 hiddenLabel.Visible = false;
                 hiddenTxtBx.Visible = false;
 
-
-
+                if (OrderDVDCkBx.Checked == false)
+                {
+                    if (CategoryTextBox.Text == "Drama")
+                    {
+                        this.SubTotalTxtBx.Text = "$1.99";
+                        this.SalesTaxTextBx.Text = string.Format($"{1.99 * 0.13:C}").ToString();
+                        this.GrandTotalTxtBx.Refresh();
+                        this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13:C}").ToString();
+                    }
+                    else if (CategoryTextBox.Text == "Comedy")
+                    {
+                        this.SubTotalTxtBx.Text = "$1.99";
+                        this.SalesTaxTextBx.Text = string.Format($"{1.99 * 0.13:C}").ToString();
+                        this.GrandTotalTxtBx.Refresh();
+                        this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13:C}").ToString();
+                    }
+                    else if (CategoryTextBox.Text == "Action")
+                    {
+                        this.SubTotalTxtBx.Text = "$2.99";
+                        this.SalesTaxTextBx.Text = string.Format($"{2.99 * 0.13:C}").ToString();
+                        this.GrandTotalTxtBx.Refresh();
+                        this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13:C}").ToString();
+                    }
+                    else if (CategoryTextBox.Text == "Sci-Fi")
+                    {
+                        this.SubTotalTxtBx.Text = "$2.99";
+                        this.SalesTaxTextBx.Text = string.Format($"{2.99 * 0.13:C}").ToString();
+                        this.GrandTotalTxtBx.Refresh();
+                        this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13:C}").ToString();
+                    }
+                    else if (CategoryTextBox.Text == "Horror")
+                    {
+                        this.SubTotalTxtBx.Text = "$2.99";
+                        this.SalesTaxTextBx.Text = string.Format($"{2.99 * 0.13:C}").ToString();
+                        this.GrandTotalTxtBx.Refresh();
+                        this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13:C}").ToString();
+                    }
+                    else if (CategoryTextBox.Text == "Thriller")
+                    {
+                        this.SubTotalTxtBx.Text = "$1.99";
+                        this.SalesTaxTextBx.Text = string.Format($"{1.99 * 0.13:C}").ToString();
+                        this.GrandTotalTxtBx.Refresh();
+                        this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13:C}").ToString();
+                    }
+                    else if (CategoryTextBox.Text == "Family")
+                    {
+                        this.SubTotalTxtBx.Text = "$0.99";
+                        this.SalesTaxTextBx.Text = string.Format($"{0.99 * 0.13:C}").ToString();
+                        this.GrandTotalTxtBx.Refresh();
+                        this.GrandTotalTxtBx.Text = string.Format($"{0.99 * 1.13:C}").ToString();
+                    }
+                    else if (CategoryTextBox.Text == "New Release")
+                    {
+                        this.SubTotalTxtBx.Text = "$4.99";
+                        this.SalesTaxTextBx.Text = string.Format($"{4.99 * 0.13:C}").ToString();
+                        this.GrandTotalTxtBx.Refresh();
+                        this.GrandTotalTxtBx.Text = string.Format($"{4.99 * 1.13:C}").ToString();
+                    }
+                }
             }
         }
         private void CancelbuttonAtOrderForm_Click(object sender, EventArgs e)
@@ -117,20 +182,86 @@ namespace MovieBonanza
         private void StreamButtonAtOrderForm_Click(object sender, EventArgs e)
         {
             StreamForm NavToStream = new StreamForm();//sends the user to the stream form 
+            NavToStream.listInfo = this;
+
+            NavToStream.CreditCardCharged.Text = this.GrandTotalTxtBx.Text;
+            NavToStream.streamingMessage.Text = this.TitleTextBox.Text;
             NavToStream.Show();
+
             this.Hide();
 
         }
         private void OrderForm_Load(object sender, EventArgs e)
         {
+            if (OrderDVDCkBx.Checked == false)
+            {
+                if (CategoryTextBox.Text == "Drama")
+                {
+                    this.SubTotalTxtBx.Text = "$1.99";
+                    this.SalesTaxTextBx.Text = string.Format($"{1.99 * 0.13:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13:C}").ToString();
+                }
+                else if (CategoryTextBox.Text == "Comedy")
+                {
+                    this.SubTotalTxtBx.Text = "$1.99";
+                    this.SalesTaxTextBx.Text = string.Format($"{1.99 * 0.13:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13:C}").ToString();
+                }
+                else if (CategoryTextBox.Text == "Action")
+                {
+                    this.SubTotalTxtBx.Text = "$2.99";
+                    this.SalesTaxTextBx.Text = string.Format($"{2.99 * 0.13:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13:C}").ToString();
+                }
+                else if (CategoryTextBox.Text == "Sci-Fi")
+                {
+                    this.SubTotalTxtBx.Text = "$2.99";
+                    this.SalesTaxTextBx.Text = string.Format($"{2.99 * 0.13:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13:C}").ToString();
+                }
+                else if (CategoryTextBox.Text == "Horror")
+                {
+                    this.SubTotalTxtBx.Text = "$2.99";
+                    this.SalesTaxTextBx.Text = string.Format($"{2.99 * 0.13:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13:C}").ToString();
+                }
+                else if (CategoryTextBox.Text == "Thriller")
+                {
+                    this.SubTotalTxtBx.Text = "$1.99";
+                    this.SalesTaxTextBx.Text = string.Format($"{1.99 * 0.13:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13:C}").ToString();
+                }
+                else if (CategoryTextBox.Text == "Family")
+                {
+                    this.SubTotalTxtBx.Text = "$0.99";
+                    this.SalesTaxTextBx.Text = string.Format($"{0.99 * 0.13:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{0.99 * 1.13:C}").ToString();
+                }
+                else if (CategoryTextBox.Text == "New Release")
+                {
+                    this.SubTotalTxtBx.Text = "$4.99";
+                    this.SalesTaxTextBx.Text = string.Format($"{4.99 * 0.13:C}").ToString();
+                    this.GrandTotalTxtBx.Refresh();
+                    this.GrandTotalTxtBx.Text = string.Format($"{4.99 * 1.13:C}").ToString();
+                }
 
+            }
         }
 
         public void TitleTextBoxAtOF_TextChanged(object sender, EventArgs e)
         {
             this.listInfo.Show();
 
+
         }
+
 
         private void OrderGroupBoxAtOrderForm_Enter(object sender, EventArgs e)
         {
@@ -159,58 +290,9 @@ namespace MovieBonanza
         private void CategoryTextBoxAtOF_TextChanged(object sender, EventArgs e)
         {
             //this sets of codes basically checks the category box, then inputs the specific amount in the cost textbox and the sales tax 
-            if (OrderDVDCkBx.Checked == false)
-            {
-                if (CategoryTextBox.Text == "Drama")
-                {
-                    this.SubTotalTxtBx.Text = "$1.99";
-                    this.SalesTaxTextBx.Text = string.Format($"{1.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13:C}").ToString();
-                }
-                else if (CategoryTextBox.Text == "Comedy")
-                {
-                    this.SubTotalTxtBx.Text = "$1.99";
-                    this.SalesTaxTextBx.Text = string.Format($"{1.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13:C}").ToString();
-                }
-                else if (CategoryTextBox.Text == "Action")
-                {
-                    this.SubTotalTxtBx.Text = "$2.99";
-                    this.SalesTaxTextBx.Text = string.Format($"{2.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13:C}").ToString();
-                }
-                else if (CategoryTextBox.Text == "Sci-Fi")
-                {
-                    this.SubTotalTxtBx.Text = "$2.99";
-                    this.SalesTaxTextBx.Text = string.Format($"{2.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13:C}").ToString();
-                }
-                else if (CategoryTextBox.Text == "Horror")
-                {
-                    this.SubTotalTxtBx.Text = "$2.99";
-                    this.SalesTaxTextBx.Text = string.Format($"{2.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{2.99 * 1.13:C}").ToString();
-                }
-                else if (CategoryTextBox.Text == "Thriller")
-                {
-                    this.SubTotalTxtBx.Text = "$1.99";
-                    this.SalesTaxTextBx.Text = string.Format($"{1.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{1.99 * 1.13:C}").ToString();
-                }
-                else if (CategoryTextBox.Text == "Family")
-                {
-                    this.SubTotalTxtBx.Text = "$0.99";
-                    this.SalesTaxTextBx.Text = string.Format($"{0.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{0.99 * 1.13:C}").ToString();
-                }
-                else if (CategoryTextBox.Text == "New Release")
-                {
-                    this.SubTotalTxtBx.Text = "$4.99";
-                    this.SalesTaxTextBx.Text = string.Format($"{4.99 * 0.13:C}").ToString();
-                    this.GrandTotalTxtBx.Text = string.Format($"{4.99 * 1.13:C}").ToString();
-                }
-            }
+
         }
+
 
         private void SubTotalTxtBx_TextChanged(object sender, EventArgs e)
         {
