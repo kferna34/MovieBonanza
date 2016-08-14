@@ -308,5 +308,10 @@ namespace MovieBonanza
         {
 
         }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Are you sure you want to print the invoice order? ");
+        }
     }
 }

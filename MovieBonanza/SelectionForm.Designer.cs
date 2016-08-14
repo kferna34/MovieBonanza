@@ -67,7 +67,9 @@
             // 
             // MovieDropdownList
             // 
+            this.MovieDropdownList.BackColor = System.Drawing.Color.Black;
             this.MovieDropdownList.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MovieDropdownList.ForeColor = System.Drawing.Color.DimGray;
             this.MovieDropdownList.FormattingEnabled = true;
             this.MovieDropdownList.ItemHeight = 19;
             this.MovieDropdownList.Items.AddRange(new object[] {
@@ -109,6 +111,7 @@
             this.SelectionGroupBox.Controls.Add(this.TitleTextBox);
             this.SelectionGroupBox.Controls.Add(this.textBox1);
             this.SelectionGroupBox.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectionGroupBox.ForeColor = System.Drawing.Color.Firebrick;
             this.SelectionGroupBox.Location = new System.Drawing.Point(276, 37);
             this.SelectionGroupBox.Name = "SelectionGroupBox";
             this.SelectionGroupBox.Size = new System.Drawing.Size(484, 327);
@@ -195,6 +198,7 @@
             // nextButtonAtSelectionForm
             // 
             this.nextButtonAtSelectionForm.Enabled = false;
+            this.nextButtonAtSelectionForm.ForeColor = System.Drawing.Color.Black;
             this.nextButtonAtSelectionForm.Location = new System.Drawing.Point(615, 354);
             this.nextButtonAtSelectionForm.Name = "nextButtonAtSelectionForm";
             this.nextButtonAtSelectionForm.Size = new System.Drawing.Size(123, 28);
@@ -207,6 +211,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(772, 394);
             this.ControlBox = false;
             this.Controls.Add(this.nextButtonAtSelectionForm);
@@ -214,6 +219,7 @@
             this.Controls.Add(this.MovieDropdownList);
             this.Controls.Add(this.HeaderLabel);
             this.Controls.Add(this.WelcomeLabel);
+            this.ForeColor = System.Drawing.Color.Firebrick;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

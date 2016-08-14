@@ -92,6 +92,7 @@
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
             this.printToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.printToolStripMenuItem.Text = "Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // streamToolStripMenuItem
             // 
@@ -130,6 +131,7 @@
             // 
             // backButtonAtOrderForm
             // 
+            this.backButtonAtOrderForm.ForeColor = System.Drawing.Color.Black;
             this.backButtonAtOrderForm.Location = new System.Drawing.Point(416, 359);
             this.backButtonAtOrderForm.Name = "backButtonAtOrderForm";
             this.backButtonAtOrderForm.Size = new System.Drawing.Size(75, 23);
@@ -140,6 +142,7 @@
             // 
             // CancelbuttonAtOrderForm
             // 
+            this.CancelbuttonAtOrderForm.ForeColor = System.Drawing.Color.Black;
             this.CancelbuttonAtOrderForm.Location = new System.Drawing.Point(539, 359);
             this.CancelbuttonAtOrderForm.Name = "CancelbuttonAtOrderForm";
             this.CancelbuttonAtOrderForm.Size = new System.Drawing.Size(75, 23);
@@ -150,6 +153,7 @@
             // 
             // StreamButtonAtOrderForm
             // 
+            this.StreamButtonAtOrderForm.ForeColor = System.Drawing.Color.Black;
             this.StreamButtonAtOrderForm.Location = new System.Drawing.Point(665, 359);
             this.StreamButtonAtOrderForm.Name = "StreamButtonAtOrderForm";
             this.StreamButtonAtOrderForm.Size = new System.Drawing.Size(75, 23);
@@ -165,6 +169,8 @@
             this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.TitleLabel);
             this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.CategoryTextBox);
             this.MovieSelectedGroupBoxAtOrderForm.Controls.Add(this.TitleTextBox);
+            this.MovieSelectedGroupBoxAtOrderForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.MovieSelectedGroupBoxAtOrderForm.ForeColor = System.Drawing.Color.Brown;
             this.MovieSelectedGroupBoxAtOrderForm.Location = new System.Drawing.Point(41, 27);
             this.MovieSelectedGroupBoxAtOrderForm.Name = "MovieSelectedGroupBoxAtOrderForm";
             this.MovieSelectedGroupBoxAtOrderForm.Size = new System.Drawing.Size(269, 369);
@@ -174,9 +180,10 @@
             // 
             // MoviePic
             // 
-            this.MoviePic.Location = new System.Drawing.Point(9, 101);
+            this.MoviePic.Location = new System.Drawing.Point(44, 119);
             this.MoviePic.Name = "MoviePic";
-            this.MoviePic.Size = new System.Drawing.Size(260, 262);
+            this.MoviePic.Size = new System.Drawing.Size(192, 242);
+            this.MoviePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.MoviePic.TabIndex = 4;
             this.MoviePic.TabStop = false;
             this.MoviePic.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -185,7 +192,7 @@
             // 
             this.CategoryLbl.AutoSize = true;
             this.CategoryLbl.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.CategoryLbl.Location = new System.Drawing.Point(6, 60);
+            this.CategoryLbl.Location = new System.Drawing.Point(20, 66);
             this.CategoryLbl.Name = "CategoryLbl";
             this.CategoryLbl.Size = new System.Drawing.Size(67, 18);
             this.CategoryLbl.TabIndex = 3;
@@ -195,7 +202,7 @@
             // 
             this.TitleLabel.AutoSize = true;
             this.TitleLabel.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.TitleLabel.Location = new System.Drawing.Point(3, 16);
+            this.TitleLabel.Location = new System.Drawing.Point(17, 22);
             this.TitleLabel.Name = "TitleLabel";
             this.TitleLabel.Size = new System.Drawing.Size(35, 18);
             this.TitleLabel.TabIndex = 2;
@@ -204,7 +211,7 @@
             // CategoryTextBox
             // 
             this.CategoryTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.CategoryTextBox.Location = new System.Drawing.Point(9, 79);
+            this.CategoryTextBox.Location = new System.Drawing.Point(23, 85);
             this.CategoryTextBox.Name = "CategoryTextBox";
             this.CategoryTextBox.ReadOnly = true;
             this.CategoryTextBox.Size = new System.Drawing.Size(240, 20);
@@ -214,7 +221,7 @@
             // TitleTextBox
             // 
             this.TitleTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.TitleTextBox.Location = new System.Drawing.Point(9, 37);
+            this.TitleTextBox.Location = new System.Drawing.Point(23, 43);
             this.TitleTextBox.Name = "TitleTextBox";
             this.TitleTextBox.ReadOnly = true;
             this.TitleTextBox.Size = new System.Drawing.Size(240, 20);
@@ -235,6 +242,7 @@
             this.OrderGroupBoxAtOrderForm.Controls.Add(this.SubTotalTxtBx);
             this.OrderGroupBoxAtOrderForm.Controls.Add(this.costTextBox);
             this.OrderGroupBoxAtOrderForm.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OrderGroupBoxAtOrderForm.ForeColor = System.Drawing.Color.Firebrick;
             this.OrderGroupBoxAtOrderForm.Location = new System.Drawing.Point(316, 27);
             this.OrderGroupBoxAtOrderForm.Name = "OrderGroupBoxAtOrderForm";
             this.OrderGroupBoxAtOrderForm.Size = new System.Drawing.Size(444, 259);
@@ -257,8 +265,10 @@
             // 
             // hiddenTxtBx
             // 
+            this.hiddenTxtBx.BackColor = System.Drawing.SystemColors.MenuText;
             this.hiddenTxtBx.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.hiddenTxtBx.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.hiddenTxtBx.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.hiddenTxtBx.Location = new System.Drawing.Point(146, 56);
             this.hiddenTxtBx.Multiline = true;
             this.hiddenTxtBx.Name = "hiddenTxtBx";
@@ -364,6 +374,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(772, 394);
             this.ControlBox = false;
             this.Controls.Add(this.OrderGroupBoxAtOrderForm);
@@ -372,6 +383,7 @@
             this.Controls.Add(this.CancelbuttonAtOrderForm);
             this.Controls.Add(this.backButtonAtOrderForm);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.Color.Firebrick;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

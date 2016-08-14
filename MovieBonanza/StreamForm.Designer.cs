@@ -39,6 +39,7 @@
             // 
             // OKButton
             // 
+            this.OKButton.ForeColor = System.Drawing.Color.Black;
             this.OKButton.Location = new System.Drawing.Point(660, 332);
             this.OKButton.Name = "OKButton";
             this.OKButton.Size = new System.Drawing.Size(75, 23);
@@ -69,7 +70,7 @@
             // 
             this.CreditCardCharged.AutoSize = true;
             this.CreditCardCharged.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.CreditCardCharged.Location = new System.Drawing.Point(496, 167);
+            this.CreditCardCharged.Location = new System.Drawing.Point(519, 170);
             this.CreditCardCharged.Name = "CreditCardCharged";
             this.CreditCardCharged.Size = new System.Drawing.Size(46, 23);
             this.CreditCardCharged.TabIndex = 5;
@@ -80,7 +81,7 @@
             // 
             this.creditChargedOtherLabel.AutoSize = true;
             this.creditChargedOtherLabel.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.creditChargedOtherLabel.Location = new System.Drawing.Point(193, 167);
+            this.creditChargedOtherLabel.Location = new System.Drawing.Point(225, 170);
             this.creditChargedOtherLabel.Name = "creditChargedOtherLabel";
             this.creditChargedOtherLabel.Size = new System.Drawing.Size(288, 23);
             this.creditChargedOtherLabel.TabIndex = 7;
@@ -89,19 +90,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 18F);
-            this.label1.Location = new System.Drawing.Point(171, 123);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 16F);
+            this.label1.Location = new System.Drawing.Point(130, 124);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 29);
+            this.label1.Size = new System.Drawing.Size(351, 27);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Movie Bonanza  is loading:";
+            this.label1.Text = "Movie Bonanza will shortly stream:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // streamingMessage
             // 
             this.streamingMessage.AutoSize = true;
             this.streamingMessage.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.streamingMessage.Location = new System.Drawing.Point(460, 128);
+            this.streamingMessage.Location = new System.Drawing.Point(497, 124);
             this.streamingMessage.MaximumSize = new System.Drawing.Size(300, 25);
             this.streamingMessage.MinimumSize = new System.Drawing.Size(0, 25);
             this.streamingMessage.Name = "streamingMessage";
@@ -115,6 +116,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(772, 394);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.creditChargedOtherLabel);
@@ -123,6 +125,7 @@
             this.Controls.Add(this.selectionLabel);
             this.Controls.Add(this.ThankYoulabel);
             this.Controls.Add(this.OKButton);
+            this.ForeColor = System.Drawing.Color.Firebrick;
             this.Name = "StreamForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StreamForm";
