@@ -193,6 +193,7 @@ namespace MovieBonanza
         }
         private void OrderForm_Load(object sender, EventArgs e)
         {
+            //conditon for the informations to show when the orderDVD check box is checked
             if (OrderDVDCkBx.Checked == false)
             {
                 if (CategoryTextBox.Text == "Drama")
@@ -312,6 +313,25 @@ namespace MovieBonanza
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Are you sure you want to print the invoice order? ");
+        }
+
+        private void cancelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SelectionForm NavToSelection = new SelectionForm();//sends the user back to the selction menu
+            NavToSelection.Show();
+            this.Hide();
+        }
+
+        private void streamToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StreamForm NavToStream = new StreamForm();//sends the user to the stream form 
+            NavToStream.listInfo = this;
+
+            NavToStream.CreditCardCharged.Text = this.GrandTotalTxtBx.Text;
+            NavToStream.streamingMessage.Text = this.TitleTextBox.Text;
+            NavToStream.Show();
+
+            this.Hide();
         }
     }
 }
